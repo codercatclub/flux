@@ -1,0 +1,5 @@
+.vscode
+.DS_*
+build/
+node_modules/
+.next/

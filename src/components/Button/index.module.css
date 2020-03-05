@@ -1,0 +1,14 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
