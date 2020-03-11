@@ -1,0 +1,14 @@
+.container h1 {
+  position: absolute;
+  font-size: 120px;
+}
+
+.container h1:nth-child(2) {
+  color: red;
+  margin-left: 5px;
+}
+
+.container h1:nth-child(1) {
+  color: rgb(0, 255, 251);
+  margin-left: -5px;
+}
