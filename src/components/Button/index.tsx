@@ -3,7 +3,7 @@ import s from './index.module.css';
 
 type ButtonProps = {
   text: string;
-  disabled: boolean;
+  disabled?: boolean;
   className?: string;
   buttonClassName?: string;
   onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
@@ -35,6 +35,7 @@ const Button: FC<ButtonProps> = ({
 Button.defaultProps = {
   className: '',
   buttonClassName: '',
+  disabled: false,
 };
 
 export default Button;

@@ -78,18 +78,29 @@ const handleSubscribe = (
   callback();
 };
 
-const Join: FC = () => {
-  const emailProps = useInput('email', () => yup.string().email().required(), '');
+type JoinFormProps = {
+  containerClass: string;
+}
+
+const JoinForm: FC<JoinFormProps> = ({ containerClass }) => {
+  const emailProps = useInput(
+    'email',
+    () =>
+      yup
+        .string()
+        .email()
+        .required(),
+    '',
+  );
   const aboutProps = useInput('about', () => yup.string().required(), '');
   const [requestError, setRequestError] = useState('');
 
   const allInputsValid = areInputsValid([emailProps, aboutProps]);
 
   return (
-    <>
-      <p>Join</p>
-      <InputField {...emailProps} type="email" />
-      <InputField {...aboutProps} type="about" />
+    <div className={containerClass}>
+      <InputField {...emailProps} type="email" className={s.input} />
+      <InputField {...aboutProps} type="about" className={s.input} />
       <Button
         text="Submit"
         className={s.button}
@@ -106,8 +117,8 @@ const Join: FC = () => {
         }
       />
       <div>{requestError}</div>
-    </>
+    </div>
   );
-}
+};
 
-export default Join;
+export default JoinForm;
