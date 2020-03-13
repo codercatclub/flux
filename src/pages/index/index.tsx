@@ -3,6 +3,7 @@ import s from './index.module.css';
 import JoinForm from '../../components/JoinForm';
 import Button from '../../components/Button';
 import Carousel from '../../components/Carousel';
+import Logo from '../../components/Logo';
 
 const prefix = (name: string): string => `${process.env.prefix}/${name}`;
 
@@ -19,7 +20,7 @@ const Index: FC = () => {
     'gallery/img_1.jpg',
     'gallery/img_1.jpg',
     'gallery/img_1.jpg',
-    'gallery/img_1.jpg'
+    'gallery/img_1.jpg',
   ];
 
   const galleryElements = images.map(url => (
@@ -32,6 +33,7 @@ const Index: FC = () => {
 
   return (
     <div className={s.layout}>
+      <Logo />
       <div className={s.titleContainer}>
         <div className={s.titleBlock}>
           <h1 className={s.title}>FLUX.</h1>
@@ -103,7 +105,10 @@ const Index: FC = () => {
             </li>
             <li>Artists, hackers and technology enthusiast of any kind</li>
           </ul>
-          <p>Do not fit to any of these category. 🙂 Don&apos;t worry just drop as a message!</p>
+          <p>
+            Do not fit to any of these category. 🙂 Don&apos;t worry just drop
+            as a message!
+          </p>
         </div>
       </div>
 
