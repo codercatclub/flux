@@ -2,7 +2,7 @@
 
 body {
   margin: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 h1 {
@@ -11,17 +11,18 @@ h1 {
 }
 
 h2 {
-  font-size: 23px;
+  font-size: 28px;
   margin: 0px;
   letter-spacing: 3px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   margin: 0px;
 }
 
 p, ul {
+  font-size: 20px;
   line-height: 30px;
 }
 

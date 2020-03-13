@@ -2,18 +2,40 @@ import { FC } from 'react';
 import s from './index.module.css';
 import JoinForm from '../../components/JoinForm';
 import Button from '../../components/Button';
+import Carousel from '../../components/Carousel';
+
+const prefix = (name: string): string => `${process.env.prefix}/${name}`;
 
 const Index: FC = () => {
   const autoplay = process.env.isProd ? 1 : 0;
 
   console.log('[D] autoplay: ', autoplay);
+  console.log('[D] prefix: ', process.env.prefix);
+
+  const images = [
+    'gallery/img_1.jpg',
+    'gallery/img_1.jpg',
+    'gallery/img_1.jpg',
+    'gallery/img_1.jpg',
+    'gallery/img_1.jpg',
+    'gallery/img_1.jpg',
+    'gallery/img_1.jpg'
+  ];
+
+  const galleryElements = images.map(url => (
+    <div
+      key={`gallery/img_${url}.jpg`}
+      className={s.galleryImg}
+      style={{ backgroundImage: `url("${url}")` }}
+    />
+  ));
 
   return (
     <div className={s.layout}>
       <div className={s.titleContainer}>
         <div className={s.titleBlock}>
           <h1 className={s.title}>FLUX.</h1>
-          <h2 className={s.punchline}>join remote revolution</h2>
+          <h3 className={s.punchline}>join the remote revolution</h3>
         </div>
       </div>
 
@@ -21,6 +43,10 @@ const Index: FC = () => {
         <div className={s.statement}>
           <h2>WHO?</h2>
           <p>We are group of travelers, entrepreneurs, engineers and artist.</p>
+        </div>
+        <div className={s.statement}>
+          <h2>WHAT?</h2>
+          <p>One month coliving and coworking gathering.</p>
         </div>
         <div className={s.statement}>
           <h2>WHY?</h2>
@@ -77,8 +103,13 @@ const Index: FC = () => {
             </li>
             <li>Artists, hackers and technology enthusiast of any kind</li>
           </ul>
+          <p>Do not fit to any of these category. 🙂 Don&apos;t worry just drop as a message!</p>
         </div>
       </div>
+
+      <Carousel className={s.carousel} height={280}>
+        {galleryElements}
+      </Carousel>
 
       <h2 className={s.sectionHeader}>Events</h2>
 
@@ -103,7 +134,11 @@ const Index: FC = () => {
               onClick={() => console.log('[D] Join button click!')}
             />
           </div>
-          <img className={s.eventImg} src="tbilisi1.jpg" alt="Tbilisi" />
+          <img
+            className={s.eventImg}
+            src={prefix('tbilisi1.jpg')}
+            alt="Tbilisi"
+          />
         </div>
       </div>
 
@@ -113,7 +148,7 @@ const Index: FC = () => {
         <div className={s.person}>
           <img
             className={s.avatar}
-            src="kirill_avatar.jpg"
+            src={prefix('kirill_avatar.jpg')}
             alt="Kirill Avatar"
           />
           <h3 className={s.personName}>Kirill Kovalevskiy</h3>
@@ -126,7 +161,11 @@ const Index: FC = () => {
         </div>
 
         <div className={s.person}>
-          <img className={s.avatar} src="sneha_avatar.jpg" alt="Sneha Avatar" />
+          <img
+            className={s.avatar}
+            src={prefix('sneha_avatar.jpg')}
+            alt="Sneha Avatar"
+          />
           <h3 className={s.personName}>Sneha Belkhale</h3>
           <p className={s.bio}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas

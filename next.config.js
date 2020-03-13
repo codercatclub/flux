@@ -1,8 +1,8 @@
-
+const isProd = process.env.NODE_ENV === 'production' || false;
+const prefix = isProd ? '/flux' : '';
 
 module.exports = {
   distDir: 'build',
-  env: {
-    isProd: (process.env.NODE_ENV === 'production') || false,
-  },
+  assetPrefix: prefix,
+  env: { isProd, prefix },
 };

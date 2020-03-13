@@ -1,0 +1,38 @@
+.carouselContainer {
+  position: relative;
+  display: flex;
+}
+
+.carousel {
+  position: relative;
+  display: grid;
+  grid-gap: 5px;
+  -webkit-overflow-scrolling: touch;
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px 20px 200px 20px;
+  margin: -20px -20px -200px -20px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow {
+  visibility: hidden;
+}
+
+.carouselContainer:hover .arrow {
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    visibility: hidden;
+  }
+
+  .carouselContainer:hover .arrow {
+    visibility: hidden;
+  }
+}
