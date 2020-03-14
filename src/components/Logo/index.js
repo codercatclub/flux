@@ -34,6 +34,7 @@ const Logo = () => {
       logoMesh = obj.children[0];
       const mUniforms = {
         time: { value: 0 },
+        mousePos: {value: new THREE.Vector3()}
       };
       const material = new THREE.ShaderMaterial(
         {
@@ -64,7 +65,18 @@ const Logo = () => {
       // camera.updateProjectionMatrix();
       renderScene();
     };
-
+    let mouse = new THREE.Vector2();
+    const worldMouse = new THREE.Vector3();
+    const handleMouseMove = (event) => {
+      mouse.x = ( ( event.clientX - renderer.domElement.offsetLeft ) / renderer.domElement.clientWidth ) * 2 - 1;
+      mouse.y = - ( ( event.clientY - renderer.domElement.offsetTop ) / renderer.domElement.clientHeight ) * 2 + 1;
+      worldMouse.set( mouse.x, mouse.y, ( camera.near + camera.far ) / ( camera.near - camera.far ) );
+      worldMouse.unproject( camera );
+      worldMouse.z = 0;
+      if(logoMesh) {
+        logoMesh.material.uniforms.mousePos.value = worldMouse;
+      }
+    };
     const animate = () => {
       if(logoMesh) {
         logoMesh.material.uniforms.time.value = (Date.now() - startTime) / 1000;
@@ -86,6 +98,7 @@ const Logo = () => {
 
     mountRef.current.appendChild(renderer.domElement);
     window.addEventListener('resize', handleResize);
+    window.addEventListener('mousemove', handleMouseMove);
     start();
 
     controls.current = { start, stop };

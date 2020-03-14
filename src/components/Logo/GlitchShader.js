@@ -29,15 +29,18 @@ const GlitchShader = {
 
       varying float glitchColorAmt;
       uniform float time;
+      uniform vec3 mousePos;
       void main() {
         float glitchNoise = noise_alt(position.xyz + 10. * vec3(sin(time), cos(time), -sin(time))) - 0.5;
         vec3 newPos = position;
+        float radialFalloff = 2.- min(length(mousePos - newPos)/.3, 2.);
         glitchColorAmt = step(fract(sin(0.1 * time) + 2. * cos(0.1 * time)), 0.03);
+        glitchColorAmt = max(radialFalloff, glitchColorAmt);
         newPos.x += glitchColorAmt * glitchNoise;
         gl_Position = projectionMatrix * modelViewMatrix * vec4( newPos, 1.0 );
       }
     `,
-  
+
     fragment: `
       varying float glitchColorAmt;
       uniform float time;
@@ -46,7 +49,7 @@ const GlitchShader = {
           return (1. - t) * a + t * b;
       }
       void main() {
-        float rgbAmount = step(0.2, glitchColorAmt);
+        float rgbAmount = glitchColorAmt;
         vec3 fractBy3 = vec3(
             floor(fract(7. * time) + 0.5),
             floor(fract(7. * time+0.3) + 0.5),
@@ -57,6 +60,5 @@ const GlitchShader = {
       }
     `,
   };
-  
+
   export default GlitchShader;
-  
