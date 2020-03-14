@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Head from 'next/head';
 import s from './index.module.css';
 import JoinForm from '../../components/JoinForm';
 import Button from '../../components/Button';
@@ -33,13 +34,16 @@ const Index: FC = () => {
 
   return (
     <div className={s.layout}>
-      
+      <Head>
+        <title>Flux.</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+
       <div className={s.titleContainer}>
-        <Logo />
-        {/* <div className={s.titleBlock}>
-          <h1 className={s.title}>FLUX.</h1>
+        <div className={s.titleBlock}>
+          <Logo />
           <h3 className={s.punchline}>join the remote revolution</h3>
-        </div> */}
+        </div>
       </div>
 
       <div className={s.statements}>

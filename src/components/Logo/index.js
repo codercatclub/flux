@@ -1,57 +1,65 @@
 import * as THREE from 'three';
 import { useEffect, useRef } from 'react';
-import GlitchShader from "./GlitchShader"
-// THREE.OBJLoader expects THREE to be a global object
+import GlitchShader from './GlitchShader';
+
+// HACK: Needed to make OBJLoader loader to work
+// since it expect TREE as a global variable in a browser
 if (typeof window !== 'undefined') {
   window.THREE = THREE;
 } else {
   global.THREE = THREE;
 }
+
 require('three/examples/js/loaders/OBJLoader');
 
-const Logo = () => {
+const Logo = ({ scale }) => {
   const mountRef = useRef(null);
   const controls = useRef(null);
 
-  const scale = 0.8;
-  const h = 300 * scale;
-  const w = 600 * scale;
+  const h = 180 * scale;
+  const w = 1200 * scale;
+
+  const zoom = 6 * scale;
 
   useEffect(() => {
-    let width = mountRef.current.clientWidth;
-    let height = mountRef.current.clientHeight;
     let frameId;
-    let startTime = Date.now();
+    const startTime = Date.now();
 
     const scene = new THREE.Scene();
-    const camera = new THREE.OrthographicCamera( -6 / 4, 6 / 4, 3 / 4, -3 / 4, .01, 1000 );
+    const camera = new THREE.OrthographicCamera(
+      -(w / 100) / zoom,
+      w / 100 / zoom,
+      h / 100 / zoom,
+      -(h / 100) / zoom,
+      0.01,
+      1000,
+    );
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     let logoMesh;
 
-    var loader = new window.THREE.OBJLoader();
+    const loader = new window.THREE.OBJLoader();
 
-    loader.load(("logo_01.obj"), (obj) => {
+    loader.load('logo_01.obj', obj => {
       logoMesh = obj.children[0];
       const mUniforms = {
         time: { value: 0 },
-        mousePos: {value: new THREE.Vector3()}
+        mousePos: { value: new THREE.Vector3() },
       };
-      const material = new THREE.ShaderMaterial(
-        {
-          uniforms : mUniforms,
-          vertexShader :  GlitchShader.vertex,
-          fragmentShader :  GlitchShader.fragment,
-          side : THREE.DoubleSide
-        }
-      );
+      const material = new THREE.ShaderMaterial({
+        uniforms: mUniforms,
+        vertexShader: GlitchShader.vertex,
+        fragmentShader: GlitchShader.fragment,
+        side: THREE.DoubleSide,
+      });
       logoMesh.material = material;
       scene.add(logoMesh);
-    })
+    });
 
     camera.position.z = 4;
+    camera.position.y = 0.3;
     renderer.setClearColor('#FFFFFF');
     renderer.setSize(w, h);
-    renderer.setPixelRatio(2)
+    renderer.setPixelRatio(2);
 
     const renderScene = () => {
       renderer.render(scene, camera);
@@ -67,18 +75,32 @@ const Logo = () => {
     };
     let mouse = new THREE.Vector2();
     const worldMouse = new THREE.Vector3();
-    const handleMouseMove = (event) => {
-      mouse.x = ( ( event.clientX - renderer.domElement.offsetLeft ) / renderer.domElement.clientWidth ) * 2 - 1;
-      mouse.y = - ( ( event.clientY - renderer.domElement.offsetTop ) / renderer.domElement.clientHeight ) * 2 + 1;
-      worldMouse.set( mouse.x, mouse.y, ( camera.near + camera.far ) / ( camera.near - camera.far ) );
-      worldMouse.unproject( camera );
+    const handleMouseMove = event => {
+      mouse.x =
+        ((event.clientX - renderer.domElement.offsetLeft) /
+          renderer.domElement.clientWidth) *
+          2 -
+        1;
+      mouse.y =
+        -(
+          (event.clientY - renderer.domElement.offsetTop) /
+          renderer.domElement.clientHeight
+        ) *
+          2 +
+        1;
+      worldMouse.set(
+        mouse.x,
+        mouse.y,
+        (camera.near + camera.far) / (camera.near - camera.far),
+      );
+      worldMouse.unproject(camera);
       worldMouse.z = 0;
-      if(logoMesh) {
+      if (logoMesh) {
         logoMesh.material.uniforms.mousePos.value = worldMouse;
       }
     };
     const animate = () => {
-      if(logoMesh) {
+      if (logoMesh) {
         logoMesh.material.uniforms.time.value = (Date.now() - startTime) / 1000;
       }
       renderScene();
@@ -105,18 +127,19 @@ const Logo = () => {
 
     return () => {
       stop();
-      window.removeEventListener('resize', handleResize);
-      mountRef.current.removeChild(renderer.domElement);
 
-      scene.remove(cube);
-      geometry.dispose();
-      material.dispose();
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('mousemove', handleMouseMove);
+
+      mountRef.current.removeChild(renderer.domElement);
     };
   }, []);
 
-  return (
-    <div style={{ height: h, width: w}} ref={mountRef} />
-  )
-}
+  return <div style={{ height: h, width: w }} ref={mountRef} />;
+};
+
+Logo.defaultProps = {
+  scale: 0.55,
+};
 
 export default Logo;
