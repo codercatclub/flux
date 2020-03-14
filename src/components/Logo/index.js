@@ -1,44 +1,74 @@
 import * as THREE from 'three';
 import { useEffect, useRef } from 'react';
+import GlitchShader from "./GlitchShader"
+// THREE.OBJLoader expects THREE to be a global object
+if (typeof window !== 'undefined') {
+  window.THREE = THREE;
+} else {
+  global.THREE = THREE;
+}
+require('three/examples/js/loaders/OBJLoader');
 
 const Logo = () => {
   const mountRef = useRef(null);
   const controls = useRef(null);
 
+  const scale = 0.8;
+  const h = 300 * scale;
+  const w = 600 * scale;
+
   useEffect(() => {
     let width = mountRef.current.clientWidth;
     let height = mountRef.current.clientHeight;
     let frameId;
+    let startTime = Date.now();
 
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+    const camera = new THREE.OrthographicCamera( -6 / 4, 6 / 4, 3 / 4, -3 / 4, .01, 1000 );
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshBasicMaterial({ color: 0xff00ff });
-    const cube = new THREE.Mesh(geometry, material);
+    let logoMesh;
+
+    var loader = new window.THREE.OBJLoader();
+
+    loader.load(("logo_01.obj"), (obj) => {
+      logoMesh = obj.children[0];
+      const mUniforms = {
+        time: { value: 0 },
+      };
+      const material = new THREE.ShaderMaterial(
+        {
+          uniforms : mUniforms,
+          vertexShader :  GlitchShader.vertex,
+          fragmentShader :  GlitchShader.fragment,
+          side : THREE.DoubleSide
+        }
+      );
+      logoMesh.material = material;
+      scene.add(logoMesh);
+    })
 
     camera.position.z = 4;
-    scene.add(cube);
-    renderer.setClearColor('#000000');
-    renderer.setSize(width, height);
+    renderer.setClearColor('#FFFFFF');
+    renderer.setSize(w, h);
+    renderer.setPixelRatio(2)
 
     const renderScene = () => {
       renderer.render(scene, camera);
     };
 
     const handleResize = () => {
-      width = mountRef.current.clientWidth;
-      height = mountRef.current.clientHeight;
-      renderer.setSize(width, height);
-      camera.aspect = width / height;
-      camera.updateProjectionMatrix();
+      // width = mountRef.current.clientWidth;
+      // height = mountRef.current.clientHeight;
+      // renderer.setSize(width, height);
+      // camera.aspect = width / height;
+      // camera.updateProjectionMatrix();
       renderScene();
     };
 
     const animate = () => {
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
-
+      if(logoMesh) {
+        logoMesh.material.uniforms.time.value = (Date.now() - startTime) / 1000;
+      }
       renderScene();
       frameId = window.requestAnimationFrame(animate);
     };
@@ -72,7 +102,7 @@ const Logo = () => {
   }, []);
 
   return (
-    <div style={{ height: '100%', width: '100%' }} ref={mountRef} />
+    <div style={{ height: h, width: w}} ref={mountRef} />
   )
 }
 

@@ -33,12 +33,13 @@ const Index: FC = () => {
 
   return (
     <div className={s.layout}>
-      <Logo />
+      
       <div className={s.titleContainer}>
-        <div className={s.titleBlock}>
+        <Logo />
+        {/* <div className={s.titleBlock}>
           <h1 className={s.title}>FLUX.</h1>
           <h3 className={s.punchline}>join the remote revolution</h3>
-        </div>
+        </div> */}
       </div>
 
       <div className={s.statements}>
