@@ -5,36 +5,32 @@ type ButtonProps = {
   text: string;
   disabled?: boolean;
   className?: string;
-  buttonClassName?: string;
-  onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+  buttonClass?: string;
+  onClick: () => void;
 };
 
 const Button: FC<ButtonProps> = ({
   text,
   onClick,
-  buttonClassName,
+  buttonClass,
   className,
   disabled,
 }) => {
-  const buttonClass = buttonClassName
-    ? `${s.button} ${s.buttonClassName}`
-    : s.button;
+  const buttonClassName =
+    buttonClass !== '' ? `${s.button} ${buttonClass}` : s.button;
 
-  if (disabled) {
-    console.log('Disabled');
-  }
   return (
     <div className={className}>
-      <div className={buttonClass} onClick={onClick}>
+      <button className={buttonClassName} onClick={onClick} disabled={disabled}>
         {text}
-      </div>
+      </button>
     </div>
   );
 };
 
 Button.defaultProps = {
   className: '',
-  buttonClassName: '',
+  buttonClass: '',
   disabled: false,
 };
 

@@ -1,35 +1,78 @@
 import { FC } from 'react';
+import useMedia from 'use-media';
 import Head from 'next/head';
 import s from './index.module.css';
 import JoinForm from '../../components/JoinForm';
 import Button from '../../components/Button';
 import Carousel from '../../components/Carousel';
 import Logo from '../../components/Logo';
+import ImageGrid from '../../components/ImageGrid';
 
 const prefix = (name: string): string => `${process.env.prefix}/${name}`;
 
+const people = [
+  {
+    name: 'Kirill Kovalevskiy',
+    avatar: 'kirill_avatar.jpg',
+    bio: `There is a question that adult often ask to kids "Who do you
+      want to be when you grow up?" while most of the kids would say
+      a fire fighter, a doctor or a policeman, my answer was"I want
+      to be a robot". I think that by enlarge I succeeded.`,
+  },
+  {
+    name: 'Sneha Belkhale',
+    avatar: 'sneha_avatar.jpg',
+    bio: `Beautiful creature with unique combinations of abilities.
+      She create VR games and generate music with math and code.
+      Shy on outside but with strong rebel spirit inside.
+      She walks 6 miles a day religiously and eats Trader Joes veggie wrap.
+      She is passionate about minimalism and location independent lifestyle.`,
+  },
+  {
+    name: 'Yulia Tolmacheva',
+    avatar: 'yulia_avatar.jpg',
+    bio: `I'm a UX/UI designer obsessed with translating users design needs
+      to empathetic solutions and bridging the gap between users and their goals.
+      I try to surround myself with enthusiastic individuals who think differently.
+      I want to live in a world where we can learn to understand and communicate
+      with each other freely, embracing our different cultures.`,
+  },
+];
+
 const Index: FC = () => {
   const autoplay = process.env.isProd ? 1 : 0;
+  const isMobile = useMedia({ maxWidth: 768 });
 
-  console.log('[D] autoplay: ', autoplay);
-  console.log('[D] prefix: ', process.env.prefix);
+  const totalImages = 24;
+  const galleryElements = [];
 
-  const images = [
-    'gallery/img_1.jpg',
-    'gallery/img_1.jpg',
-    'gallery/img_1.jpg',
-    'gallery/img_1.jpg',
-    'gallery/img_1.jpg',
-    'gallery/img_1.jpg',
-    'gallery/img_1.jpg',
-  ];
+  const totalTbilisiImages = 9;
+  const tbilisiImages = [];
 
-  const galleryElements = images.map(url => (
-    <div
-      key={`gallery/img_${url}.jpg`}
-      className={s.galleryImg}
-      style={{ backgroundImage: `url("${url}")` }}
-    />
+  for (let i = 1; i < totalTbilisiImages + 1; i += 1) {
+    tbilisiImages.push(`tbilisi/img_${i}.jpg`);
+  }
+
+  for (let i = 1; i < totalImages; i += 1) {
+    galleryElements.push(
+      <div
+        key={i}
+        className={s.galleryImg}
+        style={{ backgroundImage: `url(gallery/img_${i}.jpg)` }}
+      />,
+    );
+  }
+
+  const peopleElements = people.map(person => (
+    <div className={s.person} key={person.name}>
+      <img
+        className={s.avatar}
+        src={prefix(person.avatar)}
+        alt={person.avatar}
+      />
+      <h3 className={s.personName}>{person.name}</h3>
+      <p className={s.bio}>{person.bio}</p>
+    </div>
   ));
 
   return (
@@ -41,7 +84,7 @@ const Index: FC = () => {
 
       <div className={s.titleContainer}>
         <div className={s.titleBlock}>
-          <Logo />
+          <Logo scale={isMobile ? 0.4 : 0.55} />
           <h3 className={s.punchline}>join the remote revolution</h3>
         </div>
       </div>
@@ -133,64 +176,52 @@ const Index: FC = () => {
             </div>
 
             <p className={s.eventDescription}>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus necessitatibus culpa deserunt et at nulla alias, rem
-              vitae, minima error tempore aut nisi eveniet, sit eius ab fugit
-              eaque praesentium.
+              Tbilisi the capital of Georgia is unique uprising destination for
+              digital nomads. The combination of low prices, visa requirement
+              vibrant culture and reach young community makes it a perfect spot
+              for Flux gathering.
+            </p>
+            <p>
+              This is one of our first event which makes it an excellent
+              opportunity to engage with the Flux community. We are very exited
+              to host it in Tbilisi and connect with other Fluxers and local
+              people.
+            </p>
+            <p>
+              We are renting a large 3 bedroom apartment in the city around
+              Fabrika - famous art and tech place in Marjanishvili district. It
+              is very walkable area popular among younger locals. Located 25
+              minutes walk from the Old Town.
             </p>
             <Button
               className={s.joinButton}
               text="Join"
-              onClick={() => console.log('[D] Join button click!')}
+              onClick={(): void => window.scrollTo(0, 9999)}
             />
           </div>
-          <img
-            className={s.eventImg}
-            src={prefix('tbilisi1.jpg')}
-            alt="Tbilisi"
-          />
+          <ImageGrid urls={tbilisiImages} />
         </div>
       </div>
 
       <h2 className={s.sectionHeader}>People</h2>
-
-      <div className={s.people}>
-        <div className={s.person}>
-          <img
-            className={s.avatar}
-            src={prefix('kirill_avatar.jpg')}
-            alt="Kirill Avatar"
-          />
-          <h3 className={s.personName}>Kirill Kovalevskiy</h3>
-          <p className={s.bio}>
-            There is a question that adult often ask to kids &rdquo;Who do you
-            want to be when you grow up?&rdquo; while most of the kids would say
-            a fire fighter, a doctor or a policeman, my answer was &rdquo;I want
-            to be a robot&rdquo;. I think that by enlarge I succeeded.
-          </p>
-        </div>
-
-        <div className={s.person}>
-          <img
-            className={s.avatar}
-            src={prefix('sneha_avatar.jpg')}
-            alt="Sneha Avatar"
-          />
-          <h3 className={s.personName}>Sneha Belkhale</h3>
-          <p className={s.bio}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            quisquam iure aliquid minus! Alias tenetur architecto sint
-            perferendis? Adipisci asperiores voluptas saepe eum quae amet fuga
-            doloribus nemo. Dolores, aspernatur.
-          </p>
-        </div>
-      </div>
+      <div className={s.people}>{peopleElements}</div>
 
       <h2 className={s.sectionHeader}>Join</h2>
-
       <JoinForm containerClass={s.joinForm} />
 
-      <div className={s.footer}></div>
+      <div className={s.footer}>
+        <div>© 2020 Flux.</div>
+        <div>
+          Made by
+          <a
+            href="https://codercat.tk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CODERCAT
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,12 @@
-.button {
+.input {
+  margin-top: 20px;
+}
+
+.submitButton, .successMessage {
   margin-top: 40px;
 }
 
-.input {
+.apiError {
   margin-top: 20px;
+  margin-bottom: 20px;
 }

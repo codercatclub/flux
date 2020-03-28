@@ -12,6 +12,7 @@ type InputProps = {
   placeholder?: string;
   onKeyDown?: () => void;
   autoComplete?: string;
+  disabled: boolean;
 }
 
 const InputField: FC<InputProps> = ({
@@ -19,6 +20,7 @@ const InputField: FC<InputProps> = ({
   value,
   placeholder,
   type,
+  disabled,
   onChange,
   onKeyDown,
   className,
@@ -35,6 +37,7 @@ const InputField: FC<InputProps> = ({
       onChange={onChange}
       autoComplete={autoComplete}
       onKeyDown={onKeyDown}
+      disabled={disabled}
     />
     <ErrorMessage text={validationMessage} />
   </div>

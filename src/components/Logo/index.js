@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import * as THREE from 'three';
 import { useEffect, useRef } from 'react';
 import GlitchShader from './GlitchShader';
@@ -73,7 +74,7 @@ const Logo = ({ scale }) => {
       // camera.updateProjectionMatrix();
       renderScene();
     };
-    let mouse = new THREE.Vector2();
+    const mouse = new THREE.Vector2();
     const worldMouse = new THREE.Vector3();
     const handleMouseMove = event => {
       mouse.x =
@@ -133,7 +134,7 @@ const Logo = ({ scale }) => {
 
       mountRef.current.removeChild(renderer.domElement);
     };
-  }, []);
+  }, [scale]);
 
   return <div style={{ height: h, width: w }} ref={mountRef} />;
 };

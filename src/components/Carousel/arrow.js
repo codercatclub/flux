@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes as PT } from 'prop-types';
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import s from './arrow.module.css';
 
 const Arrow = ({ onClick, isRight, className }) => (
@@ -10,7 +11,7 @@ const Arrow = ({ onClick, isRight, className }) => (
     onClick={onClick}
     onKeyPress={onClick}
   >
-    {isRight ? ">" : "<"}
+    {isRight ? <MdKeyboardArrowRight /> : <MdKeyboardArrowLeft />}
   </div>
 );
 

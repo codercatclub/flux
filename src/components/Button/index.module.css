@@ -6,6 +6,7 @@
   height: 50px;
   border: 2px solid #000000;
   font-size: 18px;
+  color: black;
   opacity: 0.8;
 }
 
@@ -15,4 +16,12 @@
   transform: skew(-10deg, 0);
   color: crimson;
   border-color: crimson;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+  transform: none;
+  color: black;
+  border-color: black;
 }

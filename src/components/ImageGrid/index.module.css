@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+
+.arrow {
+  visibility: hidden;
+}
+
+.container:hover .arrow {
+  visibility: visible;
+}
