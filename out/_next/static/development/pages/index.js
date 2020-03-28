@@ -2035,7 +2035,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".JoinForm_input__3BzO_ {\n  margin-top: 20px;\n}\n\n.JoinForm_submitButton__qQzqa, .JoinForm_successMessage__1zO6q {\n  margin-top: 40px;\n}\n\n.JoinForm_apiError__D0BOx {\n  margin-top: 20px;\n  margin-bottom: 20px;\n}", "",{"version":3,"sources":["index.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;AACrB","file":"index.module.css","sourcesContent":[".input {\n  margin-top: 20px;\n}\n\n.submitButton, .successMessage {\n  margin-top: 40px;\n}\n\n.apiError {\n  margin-top: 20px;\n  margin-bottom: 20px;\n}"]}]);
+exports.push([module.i, ".JoinForm_input__3BzO_ {\n  margin-top: 20px;\n}\n\n.JoinForm_submitButton__qQzqa, .JoinForm_successMessage__1zO6q {\n  margin-top: 40px;\n}\n\n.JoinForm_apiError__D0BOx {\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n\n@media (max-width: 758px) {\n  .JoinForm_submitButton__qQzqa {\n    width: 100%;\n  }\n}", "",{"version":3,"sources":["index.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE;IACE,WAAW;EACb;AACF","file":"index.module.css","sourcesContent":[".input {\n  margin-top: 20px;\n}\n\n.submitButton, .successMessage {\n  margin-top: 40px;\n}\n\n.apiError {\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n\n@media (max-width: 758px) {\n  .submitButton {\n    width: 100%;\n  }\n}"]}]);
 // Exports
 exports.locals = {
 	"input": "JoinForm_input__3BzO_",
@@ -2055,7 +2055,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".index_layout__2oEH5 {\n  height: 100vh;\n}\n\n.index_titleContainer__oWbOM {\n  width: 100%;\n  height: 240px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.index_statements__3w7Rz {\n  display: grid;\n  grid-template-columns: repeat(5, 1fr);\n  grid-template-rows: auto;\n  grid-auto-flow: column;\n  grid-column-gap: 40px;\n  margin: 60px 40px 0 40px;\n}\n\n.index_statement__1-m1m {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.index_title__3UV7f {\n  font-size: 140px;\n  letter-spacing: 0.05em;\n  font-style: normal;\n  font-weight: normal;\n}\n\n.index_punchline__1Urqt {\n  width: 100%;\n  margin-left: 105px;\n  margin-top: 20px;\n}\n\n.index_overlay__2RbY6 {\n  /* animation: colorFlux 40s infinite alternate; */\n}\n\n.index_textBlocks__2_SKw {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-template-rows: auto;\n  grid-auto-flow: column;\n  grid-column-gap: 40px;\n  margin: 40px 40px 60px 40px;\n}\n\n.index_sectionHeader__2p_ub {\n  margin-left: 40px;\n}\n\n.index_people__1ETqG {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: auto;\n  grid-auto-flow: column;\n  grid-column-gap: 40px;\n  margin: 30px 40px 60px 40px;\n}\n\n.index_avatar__2gQuD {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.index_bio__1QYEg {\n  text-align: justify;\n}\n\n.index_person__238Os {\n  position: relative;\n  width: 100%;\n  padding-top: 100%;\n}\n\n.index_videoWrapper__3AN_8 {\n  grid-area: video;\n  position: relative;\n  padding-bottom: 56.25%; /* 16:9 */\n  height: 0;\n  overflow: hidden;\n}\n\n.index_personName__QCZOJ {\n  font-weight: bolder;\n  margin-top: 15px;\n}\n\n.index_videoWrapper__3AN_8 iframe {\n  position: absolute;\n  top: 0px;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.index_videoOverlay__3RagB {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(white 0%, transparent 45%);\n  z-index: 100;\n}\n\n.index_events__jbz8P {\n  margin: 30px 40px 80px 40px;\n}\n\n.index_event__JwMpr {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-column-gap: 40px;\n}\n\n.index_eventTitleBlock__3ktqb {\n  line-height: 30px;\n}\n\n.index_eventContent__1u6yv {\n  display: flex;\n  flex-direction: column;\n}\n\n.index_eventImg__3tp-Q {\n  -o-object-fit: cover;\n     object-fit: cover;\n  width: 100%;\n}\n\n.index_joinForm__11ckd {\n  margin: 30px 40px 60px 40px;\n  font-size: 20px;\n}\n\n.index_footer__1J9nd {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-style: solid;\n  border-width: 1px;\n  border-top: black;\n  height: 100px;\n  width: 100%;\n\n  font-size: 20px;\n}\n\n.index_footer__1J9nd * {\n  margin: 40px;\n}\n\n.index_carousel__3F69m {\n  margin: 50px 0 50px 0;\n}\n\n.index_galleryImg__3GPe_ {\n  display: flex;\n  position: relative;\n  align-items: flex-end;\n  background-size: cover;\n  background-position: 50%;\n  height: 100%;\n}\n\n.index_galleryImg__3GPe_:hover {\n  display: flex;\n  flex-direction: column;\n  height: 500px;\n  margin: -100px -120px 0 -120px;\n  z-index: 10;\n  overflow: visible;\n  box-shadow: 4px 4px 10px 3px #080808b3;\n}\n\n@-webkit-keyframes index_colorFlux__2j9IP {\n  0% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n  50% {\n    -webkit-filter: hue-rotate(360deg);\n            filter: hue-rotate(360deg);\n  }\n  100% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n}\n\n@keyframes index_colorFlux__2j9IP {\n  0% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n  50% {\n    -webkit-filter: hue-rotate(360deg);\n            filter: hue-rotate(360deg);\n  }\n  100% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n}\n\n@media (max-width: 758px) {\n  .index_punchline__1Urqt {\n    font-size: 18px;\n    margin-left: 80px;\n  }\n}", "",{"version":3,"sources":["index.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;AACf;;AAEA;EACE,WAAW;EACX,aAAa;EACb,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,wBAAwB;EACxB,sBAAsB;EACtB,qBAAqB;EACrB,wBAAwB;AAC1B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;EAChB,sBAAsB;EACtB,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,iDAAiD;AACnD;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,wBAAwB;EACxB,sBAAsB;EACtB,qBAAqB;EACrB,2BAA2B;AAC7B;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,wBAAwB;EACxB,sBAAsB;EACtB,qBAAqB;EACrB,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,OAAO;EACP,SAAS;EACT,QAAQ;EACR,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,sBAAsB,EAAE,SAAS;EACjC,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,QAAQ;EACR,OAAO;EACP,WAAW;EACX,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,sDAAsD;EACtD,YAAY;AACd;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,qBAAqB;AACvB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,oBAAiB;KAAjB,iBAAiB;EACjB,WAAW;AACb;;AAEA;EACE,2BAA2B;EAC3B,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,mBAAmB;EACnB,iBAAiB;EACjB,iBAAiB;EACjB,aAAa;EACb,WAAW;;EAEX,eAAe;AACjB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,qBAAqB;EACrB,sBAAsB;EACtB,wBAAwB;EACxB,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,aAAa;EACb,8BAA8B;EAC9B,WAAW;EACX,iBAAiB;EACjB,sCAAsC;AACxC;;AAEA;EACE;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;AACF;;AAVA;EACE;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;AACF;;AAEA;EACE;IACE,eAAe;IACf,iBAAiB;EACnB;AACF","file":"index.module.css","sourcesContent":[".layout {\n  height: 100vh;\n}\n\n.titleContainer {\n  width: 100%;\n  height: 240px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.statements {\n  display: grid;\n  grid-template-columns: repeat(5, 1fr);\n  grid-template-rows: auto;\n  grid-auto-flow: column;\n  grid-column-gap: 40px;\n  margin: 60px 40px 0 40px;\n}\n\n.statement {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.title {\n  font-size: 140px;\n  letter-spacing: 0.05em;\n  font-style: normal;\n  font-weight: normal;\n}\n\n.punchline {\n  width: 100%;\n  margin-left: 105px;\n  margin-top: 20px;\n}\n\n.overlay {\n  /* animation: colorFlux 40s infinite alternate; */\n}\n\n.textBlocks {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-template-rows: auto;\n  grid-auto-flow: column;\n  grid-column-gap: 40px;\n  margin: 40px 40px 60px 40px;\n}\n\n.sectionHeader {\n  margin-left: 40px;\n}\n\n.people {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: auto;\n  grid-auto-flow: column;\n  grid-column-gap: 40px;\n  margin: 30px 40px 60px 40px;\n}\n\n.avatar {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.bio {\n  text-align: justify;\n}\n\n.person {\n  position: relative;\n  width: 100%;\n  padding-top: 100%;\n}\n\n.videoWrapper {\n  grid-area: video;\n  position: relative;\n  padding-bottom: 56.25%; /* 16:9 */\n  height: 0;\n  overflow: hidden;\n}\n\n.personName {\n  font-weight: bolder;\n  margin-top: 15px;\n}\n\n.videoWrapper iframe {\n  position: absolute;\n  top: 0px;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.videoOverlay {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(white 0%, transparent 45%);\n  z-index: 100;\n}\n\n.events {\n  margin: 30px 40px 80px 40px;\n}\n\n.event {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-column-gap: 40px;\n}\n\n.eventTitleBlock {\n  line-height: 30px;\n}\n\n.eventContent {\n  display: flex;\n  flex-direction: column;\n}\n\n.eventImg {\n  object-fit: cover;\n  width: 100%;\n}\n\n.joinForm {\n  margin: 30px 40px 60px 40px;\n  font-size: 20px;\n}\n\n.footer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-style: solid;\n  border-width: 1px;\n  border-top: black;\n  height: 100px;\n  width: 100%;\n\n  font-size: 20px;\n}\n\n.footer * {\n  margin: 40px;\n}\n\n.carousel {\n  margin: 50px 0 50px 0;\n}\n\n.galleryImg {\n  display: flex;\n  position: relative;\n  align-items: flex-end;\n  background-size: cover;\n  background-position: 50%;\n  height: 100%;\n}\n\n.galleryImg:hover {\n  display: flex;\n  flex-direction: column;\n  height: 500px;\n  margin: -100px -120px 0 -120px;\n  z-index: 10;\n  overflow: visible;\n  box-shadow: 4px 4px 10px 3px #080808b3;\n}\n\n@keyframes colorFlux {\n  0% {\n    filter: hue-rotate(180deg);\n  }\n  50% {\n    filter: hue-rotate(360deg);\n  }\n  100% {\n    filter: hue-rotate(180deg);\n  }\n}\n\n@media (max-width: 758px) {\n  .punchline {\n    font-size: 18px;\n    margin-left: 80px;\n  }\n}"]}]);
+exports.push([module.i, ".index_layout__2oEH5 {\n  /* height: 100vh; */\n  overflow: hidden;\n}\n\n.index_titleContainer__oWbOM {\n  width: 100%;\n  height: 240px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n}\n\n.index_statements__3w7Rz {\n  display: flex;\n  margin: 60px 40px 0 40px;\n}\n\n.index_statement__1-m1m {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0 20px 0 20px;\n}\n\n.index_title__3UV7f {\n  font-size: 140px;\n  letter-spacing: 0.05em;\n  font-style: normal;\n  font-weight: normal;\n}\n\n.index_punchline__1Urqt {\n  width: 100%;\n  margin-left: 105px;\n  margin-top: 20px;\n}\n\n.index_textBlocks__2_SKw {\n  display: flex;\n  justify-content: space-evenly;\n  margin: 40px 40px 60px 40px;\n}\n\n.index_textBlock__A-yl9 {\n  margin-right: 40px;\n  width: 50%;\n}\n\n.index_sectionHeader__2p_ub {\n  margin-left: 40px;\n}\n\n.index_people__1ETqG {\n  display: flex;\n  margin: 30px 40px 60px 40px;\n}\n\n.index_person__238Os {\n  position: relative;\n  width: 100%;\n  margin-right: 30px;\n}\n\n.index_avatar__2gQuD {\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.index_bio__1QYEg {\n  text-align: justify;\n}\n\n.index_videoWrapper__3AN_8 {\n  grid-area: video;\n  position: relative;\n  padding-bottom: 56.25%; /* 16:9 */\n  height: 0;\n  overflow: hidden;\n}\n\n.index_personName__QCZOJ {\n  font-weight: bolder;\n  margin-top: 15px;\n}\n\n.index_videoWrapper__3AN_8 iframe {\n  position: absolute;\n  top: 0px;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.index_videoOverlay__3RagB {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(white 0%, transparent 45%);\n  z-index: 100;\n}\n\n.index_events__jbz8P {\n  margin: 30px 40px 80px 40px;\n  overflow: hidden;\n}\n\n.index_event__JwMpr {\n  display: flex;\n}\n\n.index_eventContent__1u6yv,\n.index_eventImages__3QHz4 {\n  width: 50%;\n}\n\n.index_eventTitleBlock__3ktqb {\n  line-height: 30px;\n}\n\n.index_eventContent__1u6yv {\n  display: flex;\n  flex-direction: column;\n}\n\n.index_joinForm__11ckd {\n  margin: 30px 40px 60px 40px;\n  font-size: 20px;\n}\n\n.index_footer__1J9nd {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 100px;\n  width: 100%;\n\n  font-size: 20px;\n}\n\n.index_footer__1J9nd * {\n  margin: 40px;\n}\n\n.index_carousel__3F69m {\n  margin: 50px 0 50px 0;\n}\n\n.index_galleryImg__3GPe_ {\n  display: flex;\n  position: relative;\n  align-items: flex-end;\n  background-size: cover;\n  background-position: 50%;\n  height: 100%;\n}\n\n.index_galleryImg__3GPe_:hover {\n  display: flex;\n  flex-direction: column;\n  height: 500px;\n  margin: -100px -120px 0 -120px;\n  z-index: 10;\n  overflow: visible;\n  box-shadow: 4px 4px 10px 3px #080808b3;\n}\n\n@-webkit-keyframes index_colorFlux__2j9IP {\n  0% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n  50% {\n    -webkit-filter: hue-rotate(360deg);\n            filter: hue-rotate(360deg);\n  }\n  100% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n}\n\n@keyframes index_colorFlux__2j9IP {\n  0% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n  50% {\n    -webkit-filter: hue-rotate(360deg);\n            filter: hue-rotate(360deg);\n  }\n  100% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n}\n\n@media (max-width: 758px) {\n  .index_sectionHeader__2p_ub {\n    width: 90%;\n    margin: auto;\n  }\n\n  .index_titleContainer__oWbOM {\n    height: 180px;\n    margin-bottom: 40px;\n  }\n\n  .index_punchline__1Urqt {\n    font-size: 18px;\n    margin-left: 80px;\n  }\n\n  .index_statements__3w7Rz {\n    flex-direction: column;\n    margin: auto;\n    width: 90%;\n  }\n\n  .index_people__1ETqG {\n    flex-direction: column;\n    margin: 30px 0 0 0;\n  }\n\n  .index_personBody__2fuYr {\n    width: 90%;\n    margin: auto;\n  }\n\n  .index_events__jbz8P {\n    margin: 40px 0 0 0;\n    width: 100%;\n  }\n\n  .index_event__JwMpr {\n    flex-direction: column-reverse;\n  }\n\n  .index_eventContent__1u6yv,\n  .index_eventImages__3QHz4 {\n    width: 100%;\n  }\n\n  .index_eventImages__3QHz4 {\n    height: 500px;\n    margin-bottom: 30px;\n  }\n\n  .index_eventContent__1u6yv {\n    width: 90%;\n    margin: 0 auto 40px auto;\n  }\n\n  .index_textBlocks__2_SKw {\n    flex-direction: column;\n    margin: 30px auto 0 auto;\n    width: 90%;\n  }\n\n  .index_textBlock__A-yl9 {\n    width: 100%;\n  }\n\n  .index_joinForm__11ckd {\n    margin: 30px 10px 60px 10px;\n  }\n\n  .index_footer__1J9nd {\n    height: 70px;\n  }\n\n  .index_footer__1J9nd * {\n    margin: 12px;\n  }\n}\n", "",{"version":3,"sources":["index.module.css"],"names":[],"mappings":"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","file":"index.module.css","sourcesContent":[".layout {\n  /* height: 100vh; */\n  overflow: hidden;\n}\n\n.titleContainer {\n  width: 100%;\n  height: 240px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n}\n\n.statements {\n  display: flex;\n  margin: 60px 40px 0 40px;\n}\n\n.statement {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0 20px 0 20px;\n}\n\n.title {\n  font-size: 140px;\n  letter-spacing: 0.05em;\n  font-style: normal;\n  font-weight: normal;\n}\n\n.punchline {\n  width: 100%;\n  margin-left: 105px;\n  margin-top: 20px;\n}\n\n.textBlocks {\n  display: flex;\n  justify-content: space-evenly;\n  margin: 40px 40px 60px 40px;\n}\n\n.textBlock {\n  margin-right: 40px;\n  width: 50%;\n}\n\n.sectionHeader {\n  margin-left: 40px;\n}\n\n.people {\n  display: flex;\n  margin: 30px 40px 60px 40px;\n}\n\n.person {\n  position: relative;\n  width: 100%;\n  margin-right: 30px;\n}\n\n.avatar {\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.bio {\n  text-align: justify;\n}\n\n.videoWrapper {\n  grid-area: video;\n  position: relative;\n  padding-bottom: 56.25%; /* 16:9 */\n  height: 0;\n  overflow: hidden;\n}\n\n.personName {\n  font-weight: bolder;\n  margin-top: 15px;\n}\n\n.videoWrapper iframe {\n  position: absolute;\n  top: 0px;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.videoOverlay {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(white 0%, transparent 45%);\n  z-index: 100;\n}\n\n.events {\n  margin: 30px 40px 80px 40px;\n  overflow: hidden;\n}\n\n.event {\n  display: flex;\n}\n\n.eventContent,\n.eventImages {\n  width: 50%;\n}\n\n.eventTitleBlock {\n  line-height: 30px;\n}\n\n.eventContent {\n  display: flex;\n  flex-direction: column;\n}\n\n.joinForm {\n  margin: 30px 40px 60px 40px;\n  font-size: 20px;\n}\n\n.footer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 100px;\n  width: 100%;\n\n  font-size: 20px;\n}\n\n.footer * {\n  margin: 40px;\n}\n\n.carousel {\n  margin: 50px 0 50px 0;\n}\n\n.galleryImg {\n  display: flex;\n  position: relative;\n  align-items: flex-end;\n  background-size: cover;\n  background-position: 50%;\n  height: 100%;\n}\n\n.galleryImg:hover {\n  display: flex;\n  flex-direction: column;\n  height: 500px;\n  margin: -100px -120px 0 -120px;\n  z-index: 10;\n  overflow: visible;\n  box-shadow: 4px 4px 10px 3px #080808b3;\n}\n\n@keyframes colorFlux {\n  0% {\n    filter: hue-rotate(180deg);\n  }\n  50% {\n    filter: hue-rotate(360deg);\n  }\n  100% {\n    filter: hue-rotate(180deg);\n  }\n}\n\n@media (max-width: 758px) {\n  .sectionHeader {\n    width: 90%;\n    margin: auto;\n  }\n\n  .titleContainer {\n    height: 180px;\n    margin-bottom: 40px;\n  }\n\n  .punchline {\n    font-size: 18px;\n    margin-left: 80px;\n  }\n\n  .statements {\n    flex-direction: column;\n    margin: auto;\n    width: 90%;\n  }\n\n  .people {\n    flex-direction: column;\n    margin: 30px 0 0 0;\n  }\n\n  .personBody {\n    width: 90%;\n    margin: auto;\n  }\n\n  .events {\n    margin: 40px 0 0 0;\n    width: 100%;\n  }\n\n  .event {\n    flex-direction: column-reverse;\n  }\n\n  .eventContent,\n  .eventImages {\n    width: 100%;\n  }\n\n  .eventImages {\n    height: 500px;\n    margin-bottom: 30px;\n  }\n\n  .eventContent {\n    width: 90%;\n    margin: 0 auto 40px auto;\n  }\n\n  .textBlocks {\n    flex-direction: column;\n    margin: 30px auto 0 auto;\n    width: 90%;\n  }\n\n  .textBlock {\n    width: 100%;\n  }\n\n  .joinForm {\n    margin: 30px 10px 60px 10px;\n  }\n\n  .footer {\n    height: 70px;\n  }\n\n  .footer * {\n    margin: 12px;\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"layout": "index_layout__2oEH5",
@@ -2064,25 +2064,26 @@ exports.locals = {
 	"statement": "index_statement__1-m1m",
 	"title": "index_title__3UV7f",
 	"punchline": "index_punchline__1Urqt",
-	"overlay": "index_overlay__2RbY6",
 	"textBlocks": "index_textBlocks__2_SKw",
+	"textBlock": "index_textBlock__A-yl9",
 	"sectionHeader": "index_sectionHeader__2p_ub",
 	"people": "index_people__1ETqG",
+	"person": "index_person__238Os",
 	"avatar": "index_avatar__2gQuD",
 	"bio": "index_bio__1QYEg",
-	"person": "index_person__238Os",
 	"videoWrapper": "index_videoWrapper__3AN_8",
 	"personName": "index_personName__QCZOJ",
 	"videoOverlay": "index_videoOverlay__3RagB",
 	"events": "index_events__jbz8P",
 	"event": "index_event__JwMpr",
-	"eventTitleBlock": "index_eventTitleBlock__3ktqb",
 	"eventContent": "index_eventContent__1u6yv",
-	"eventImg": "index_eventImg__3tp-Q",
+	"eventImages": "index_eventImages__3QHz4",
+	"eventTitleBlock": "index_eventTitleBlock__3ktqb",
 	"joinForm": "index_joinForm__11ckd",
 	"footer": "index_footer__1J9nd",
 	"carousel": "index_carousel__3F69m",
 	"galleryImg": "index_galleryImg__3GPe_",
+	"personBody": "index_personBody__2fuYr",
 	"colorFlux": "index_colorFlux__2j9IP"
 };
 
@@ -72314,7 +72315,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var ImageGrid = function ImageGrid(_ref) {
-  var urls = _ref.urls;
+  var urls = _ref.urls,
+      className = _ref.className;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
       curIndex = _useState[0],
@@ -72322,13 +72324,13 @@ var ImageGrid = function ImageGrid(_ref) {
 
   var curUrl = urls[curIndex];
   return __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.container,
+    className: "".concat(_index_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.container, " ").concat(className),
     style: {
       backgroundImage: "url(".concat(curUrl, ")")
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, __jsx(_Carousel_arrow__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -72338,7 +72340,7 @@ var ImageGrid = function ImageGrid(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 19
     },
     __self: this
   }), __jsx(_Carousel_arrow__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -72349,7 +72351,7 @@ var ImageGrid = function ImageGrid(_ref) {
     isRight: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 27
     },
     __self: this
   }));
@@ -72737,7 +72739,8 @@ var JoinForm = function JoinForm(_ref) {
     buttonClass: _index_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.submitButton,
     disabled: !allInputsValid,
     onClick: function onClick() {
-      return join(emailProps.value, questions, handleSuccess, setRequestError);
+      setRequestError('');
+      join(emailProps.value, questions, handleSuccess, setRequestError);
     },
     __source: {
       fileName: _jsxFileName,
@@ -73082,39 +73085,46 @@ var Index = function Index() {
         lineNumber: 68
       },
       __self: this
-    }), __jsx("h3", {
-      className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.personName,
+    }), __jsx("div", {
+      className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.personBody,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 73
+      },
+      __self: this
+    }, __jsx("h3", {
+      className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.personName,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74
       },
       __self: this
     }, person.name), __jsx("p", {
       className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.bio,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74
+        lineNumber: 75
       },
       __self: this
-    }, person.bio));
+    }, person.bio)));
   });
   return __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.layout,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 81
     },
     __self: this
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 82
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 83
     },
     __self: this
   }, "Flux."), __jsx("meta", {
@@ -73122,151 +73132,151 @@ var Index = function Index() {
     content: "initial-scale=1.0, width=device-width",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 84
     },
     __self: this
   })), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.titleContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 87
     },
     __self: this
   }, __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.titleBlock,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 88
     },
     __self: this
   }, __jsx(_components_Logo__WEBPACK_IMPORTED_MODULE_7__["default"], {
     scale: isMobile ? 0.4 : 0.55,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 89
     },
     __self: this
   }), __jsx("h3", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.punchline,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 90
     },
     __self: this
   }, "join the remote revolution"))), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.statements,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 94
     },
     __self: this
   }, __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.statement,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 95
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 96
     },
     __self: this
   }, "WHO?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 97
     },
     __self: this
   }, "We are group of travelers, entrepreneurs, engineers and artist.")), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.statement,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 99
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 100
     },
     __self: this
   }, "WHAT?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 101
     },
     __self: this
   }, "One month coliving and coworking gathering.")), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.statement,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 103
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 104
     },
     __self: this
   }, "WHY?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 105
     },
     __self: this
   }, "We believe in remote feature and better lifestyle outside of office cubicles.")), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.statement,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 110
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 111
     },
     __self: this
   }, "WHERE?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 112
     },
     __self: this
   }, "Tbilisi, Georgia")), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.statement,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 114
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 115
     },
     __self: this
   }, "WHEN?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 116
     },
     __self: this
   }, "June 1 - 30, 2020"))), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.videoWrapper,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 120
     },
     __self: this
   }, __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.videoOverlay,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 121
     },
     __self: this
   }), __jsx("iframe", {
@@ -73279,76 +73289,76 @@ var Index = function Index() {
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 122
     },
     __self: this
   })), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.textBlocks,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 133
     },
     __self: this
   }, __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.textBlock,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 134
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 135
     },
     __self: this
   }, "What is Flux?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 136
     },
     __self: this
   }, "Flux is a one month gathering of creative and open minded individuals in vibrant locations around the world. The main goals are facilitate connections, friendship, collaboration, explore new cultures and have fun working and living together. Also we like to promote location independent life style and cultivate technology, art and peer to peer education.")), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.textBlock,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 145
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144
+      lineNumber: 146
     },
     __self: this
   }, "Who is Flux for?"), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 147
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146
+      lineNumber: 148
     },
     __self: this
   }, "Beginner and experienced Digital Nomads who is looking to connect with local and global community", ' '), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 152
     },
     __self: this
   }, "People who interested in location independent life style but doesn't know where to start"), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 156
     },
     __self: this
   }, "Artists, hackers and technology enthusiast of any kind")), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 158
     },
     __self: this
   }, "Do not fit to any of these category. \uD83D\uDE42 Don't worry just drop as a message!"))), __jsx(_components_Carousel__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -73356,79 +73366,79 @@ var Index = function Index() {
     height: 280,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163
+      lineNumber: 165
     },
     __self: this
   }, galleryElements), __jsx("h2", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.sectionHeader,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 169
     },
     __self: this
   }, "Events"), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.events,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169
+      lineNumber: 171
     },
     __self: this
   }, __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.event,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170
+      lineNumber: 172
     },
     __self: this
   }, __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.eventContent,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171
+      lineNumber: 173
     },
     __self: this
   }, __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.eventTitleBlock,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 172
+      lineNumber: 174
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 173
+      lineNumber: 175
     },
     __self: this
   }, "Tbilisi, Georgia"), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174
+      lineNumber: 176
     },
     __self: this
   }, "09.01 - 09.31. 2020"), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175
+      lineNumber: 177
     },
     __self: this
   }, "Price: $300")), __jsx("p", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.eventDescription,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178
+      lineNumber: 180
     },
     __self: this
   }, "Tbilisi the capital of Georgia is unique uprising destination for digital nomads. The combination of low prices, visa requirement vibrant culture and reach young community makes it a perfect spot for Flux gathering."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 184
+      lineNumber: 186
     },
     __self: this
   }, "This is one of our first event which makes it an excellent opportunity to engage with the Flux community. We are very exited to host it in Tbilisi and connect with other Fluxers and local people."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190
+      lineNumber: 192
     },
     __self: this
   }, "We are renting a large 3 bedroom apartment in the city around Fabrika - famous art and tech place in Marjanishvili district. It is very walkable area popular among younger locals. Located 25 minutes walk from the Old Town."), __jsx(_components_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -73439,61 +73449,62 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 196
+      lineNumber: 198
     },
     __self: this
   })), __jsx(_components_ImageGrid__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.eventImages,
     urls: tbilisiImages,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 202
+      lineNumber: 204
     },
     __self: this
   }))), __jsx("h2", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.sectionHeader,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 206
+      lineNumber: 208
     },
     __self: this
   }, "People"), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.people,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 207
+      lineNumber: 209
     },
     __self: this
   }, peopleElements), __jsx("h2", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.sectionHeader,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 209
+      lineNumber: 211
     },
     __self: this
   }, "Join"), __jsx(_components_JoinForm__WEBPACK_IMPORTED_MODULE_4__["default"], {
     containerClass: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.joinForm,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210
+      lineNumber: 212
     },
     __self: this
   }), __jsx("div", {
     className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.footer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 212
+      lineNumber: 214
     },
     __self: this
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 213
+      lineNumber: 215
     },
     __self: this
   }, "\xA9 2020 Flux."), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 214
+      lineNumber: 216
     },
     __self: this
   }, "Made by", __jsx("a", {
@@ -73502,7 +73513,7 @@ var Index = function Index() {
     rel: "noopener noreferrer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 216
+      lineNumber: 218
     },
     __self: this
   }, "CODERCAT"))));
@@ -73512,7 +73523,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkif%2Fpr%2Fflux%2Fweb%2Fsrc%2Fpages%2Findex%2Findex.tsx ***!
   \***********************************************************************************************************************************/
@@ -73535,5 +73546,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
