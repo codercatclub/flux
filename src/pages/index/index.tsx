@@ -1,6 +1,8 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import useMedia from 'use-media';
+import Link from 'next/link';
 import Head from 'next/head';
+import ReactGA from 'react-ga';
 import s from './index.module.css';
 import JoinForm from '../../components/JoinForm';
 import Button from '../../components/Button';
@@ -14,26 +16,27 @@ const people = [
   {
     name: 'Kirill Kovalevskiy',
     avatar: 'kirill_avatar.jpg',
-    bio: `There is a question that adult often ask to kids "Who do you
-      want to be when you grow up?" while most of the kids would say
-      a fire fighter, a doctor or a policeman, my answer was"I want
-      to be a robot". I think that by enlarge I succeeded.`,
+    bio: `There is a question that adults often ask to kids "Who do you
+      want to be when you grow up?". While most of the kids would say
+      a fire fighter, a doctor or a policeman, my answer was "I want
+      to be a robot". I think that by and large I succeeded.`,
   },
   {
     name: 'Sneha Belkhale',
     avatar: 'sneha_avatar.jpg',
-    bio: `Beautiful creature with unique combinations of abilities.
-      She create VR games and generate music with math and code.
-      Shy on outside but with strong rebel spirit inside.
-      She walks 6 miles a day religiously and eats Trader Joes veggie wrap.
-      She is passionate about minimalism and location independent lifestyle.`,
+    bio: `A beautiful creature,
+      shy on outside but with strong rebel spirit inside,
+      and a unique combinations of abilities.
+      She creates VR games, generates music with math and code, and
+      walks 6 miles a day religiously and eats Trader Joes veggie wrap.
+      She is passionate about minimalism and location independent lifestyles.`,
   },
   {
     name: 'Yulia Tolmacheva',
     avatar: 'yulia_avatar.jpg',
     bio: `I'm a UX/UI designer obsessed with translating users design needs
       to empathetic solutions and bridging the gap between users and their goals.
-      I try to surround myself with enthusiastic individuals who think differently.
+      I try to surround myself with enthusiastic individuals who think differen tly.
       I want to live in a world where we can learn to understand and communicate
       with each other freely, embracing our different cultures.`,
   },
@@ -48,6 +51,11 @@ const Index: FC = () => {
 
   const totalTbilisiImages = 9;
   const tbilisiImages = [];
+
+  useEffect(() => {
+    ReactGA.initialize('UA-100222662-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   for (let i = 1; i < totalTbilisiImages + 1; i += 1) {
     tbilisiImages.push(`tbilisi/img_${i}.jpg`);
@@ -84,9 +92,18 @@ const Index: FC = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
+      <div className={s.menu}>
+        <Link href={prefix('')}>
+          <a className={s.menuItem}>.Home</a>
+        </Link>
+        <Link href={prefix('about')}>
+          <a className={s.menuItem}>.About</a>
+        </Link>
+      </div>
+
       <div className={s.titleContainer}>
         <div className={s.titleBlock}>
-          <Logo scale={isMobile ? 0.4 : 0.55} />
+          <Logo scale={isMobile ? 0.4 : 0.75} />
           <h3 className={s.punchline}>join the remote revolution</h3>
         </div>
       </div>
@@ -98,13 +115,13 @@ const Index: FC = () => {
         </div>
         <div className={s.statement}>
           <h2>WHAT?</h2>
-          <p>One month coliving and coworking gathering.</p>
+          <p>A one month coliving and coworking gathering.</p>
         </div>
         <div className={s.statement}>
           <h2>WHY?</h2>
           <p>
-            We believe in remote feature and better lifestyle outside of office
-            cubicles.
+            We believe in a remote future and balanced lifestyle outside of
+            office cubicles.
           </p>
         </div>
         <div className={s.statement}>
@@ -135,30 +152,27 @@ const Index: FC = () => {
           <h2>What is Flux?</h2>
           <p>
             Flux is a one month gathering of creative and open minded
-            individuals in vibrant locations around the world. The main goals
-            are facilitate connections, friendship, collaboration, explore new
-            cultures and have fun working and living together. Also we like to
-            promote location independent life style and cultivate technology,
-            art and peer to peer education.
+            individuals in vibrant locations around the world. We like to
+            cultivate a space for technology, art, peer to peer education, and a
+            location independent lifestyle. We believe the time spent working
+            and living together will facilitate connections, friendship, and
+            collaboration.
           </p>
         </div>
         <div className={s.textBlock}>
           <h2>Who is Flux for?</h2>
           <ul>
             <li>
-              Beginner and experienced Digital Nomads who is looking to connect
-              with local and global community{' '}
+              Digital Nomads who are looking to connect with the local and
+              global community{' '}
             </li>
             <li>
-              People who interested in location independent life style but
-              doesn&apos;t know where to start
+              People who are interested in a location independent life style but
+              don&apos;t know where to start
             </li>
             <li>Artists, hackers and technology enthusiast of any kind</li>
           </ul>
-          <p>
-            Do not fit to any of these category. 🙂 Don&apos;t worry just drop
-            as a message!
-          </p>
+          <p></p>
         </div>
       </div>
 
@@ -178,22 +192,20 @@ const Index: FC = () => {
             </div>
 
             <p className={s.eventDescription}>
-              Tbilisi the capital of Georgia is unique uprising destination for
-              digital nomads. The combination of low prices, visa requirement
-              vibrant culture and reach young community makes it a perfect spot
-              for Flux gathering.
+              Tbilisi, the capital of Georgia, is a unique and uprising
+              destination for digital nomads. The combination of low prices, one
+              year visas, vibrant culture, and rich young community, makes it a
+              perfect spot for a Flux gathering.
             </p>
             <p>
-              This is one of our first event which makes it an excellent
-              opportunity to engage with the Flux community. We are very exited
-              to host it in Tbilisi and connect with other Fluxers and local
-              people.
+              //TODO: We are very exited to host Flux in Tbilisi and connect
+              with other Fluxers and local people.
             </p>
             <p>
               We are renting a large 3 bedroom apartment in the city around
-              Fabrika - famous art and tech place in Marjanishvili district. It
-              is very walkable area popular among younger locals. Located 25
-              minutes walk from the Old Town.
+              Fabrika - a famous art and tech hub in Marjanishvili district. It
+              is a very walkable area popular among younger locals, located a 25
+              minute walk from the Old Town.
             </p>
             <Button
               className={s.joinButton}
@@ -214,7 +226,7 @@ const Index: FC = () => {
       <div className={s.footer}>
         <div>© 2020 Flux.</div>
         <div>
-          Made by
+          Made by{' '}
           <a
             href="https://codercat.tk"
             target="_blank"
