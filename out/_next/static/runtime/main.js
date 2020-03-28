@@ -499,7 +499,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/snehabelkhale/flux/build");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/kif/pr/flux/web/build");
       return error;
     }
   };
