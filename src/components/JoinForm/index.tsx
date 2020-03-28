@@ -177,9 +177,10 @@ const JoinForm: FC<JoinFormProps> = ({ containerClass }) => {
           text="Submit"
           buttonClass={s.submitButton}
           disabled={!allInputsValid}
-          onClick={(): void =>
-            join(emailProps.value, questions, handleSuccess, setRequestError)
-          }
+          onClick={(): void => {
+            setRequestError('');
+            join(emailProps.value, questions, handleSuccess, setRequestError);
+          }}
         />
       )}
     </div>

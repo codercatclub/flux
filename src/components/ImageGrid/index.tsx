@@ -4,17 +4,21 @@ import Arrow from '../Carousel/arrow';
 
 type ImageGridProps = {
   urls: string[];
+  className: string;
 };
 
-const ImageGrid: FC<ImageGridProps> = ({ urls }) => {
+const ImageGrid: FC<ImageGridProps> = ({ urls, className }) => {
   const [curIndex, setCurIndex] = useState(0);
   const curUrl = urls[curIndex];
 
   return (
-    <div className={s.container} style={{ backgroundImage: `url(${curUrl})` }}>
+    <div
+      className={`${s.container} ${className}`}
+      style={{ backgroundImage: `url(${curUrl})` }}
+    >
       <Arrow
         className={s.arrow}
-        onClick={() => {
+        onClick={(): void => {
           curIndex !== 0
             ? setCurIndex(curIndex - 1)
             : setCurIndex(urls.length - 1);
@@ -22,7 +26,7 @@ const ImageGrid: FC<ImageGridProps> = ({ urls }) => {
       />
       <Arrow
         className={s.arrow}
-        onClick={() => {
+        onClick={(): void => {
           curIndex < urls.length - 1
             ? setCurIndex(curIndex + 1)
             : setCurIndex(0);

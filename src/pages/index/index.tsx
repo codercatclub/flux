@@ -70,8 +70,10 @@ const Index: FC = () => {
         src={prefix(person.avatar)}
         alt={person.avatar}
       />
-      <h3 className={s.personName}>{person.name}</h3>
-      <p className={s.bio}>{person.bio}</p>
+      <div className={s.personBody}>
+        <h3 className={s.personName}>{person.name}</h3>
+        <p className={s.bio}>{person.bio}</p>
+      </div>
     </div>
   ));
 
@@ -199,7 +201,7 @@ const Index: FC = () => {
               onClick={(): void => window.scrollTo(0, 9999)}
             />
           </div>
-          <ImageGrid urls={tbilisiImages} />
+          <ImageGrid className={s.eventImages} urls={tbilisiImages} />
         </div>
       </div>
 
