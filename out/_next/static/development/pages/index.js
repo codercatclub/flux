@@ -1989,6 +1989,23 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Footer/index.module.css":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/postcss-loader/src??__nextjs_postcss!./src/components/Footer/index.module.css ***!
+  \************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".Footer_footer__2vLgL {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 100px;\n  width: 100%;\n\n  font-size: 20px;\n}\n\n.Footer_footer__2vLgL > div {\n  margin: 40px;\n}\n\n@media (max-width: 758px) {\n  .Footer_footer__2vLgL {\n    height: 70px;\n  }\n\n  .Footer_footer__2vLgL * {\n    margin: 12px;\n  }\n}\n", "",{"version":3,"sources":["index.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,aAAa;EACb,WAAW;;EAEX,eAAe;AACjB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE;IACE,YAAY;EACd;;EAEA;IACE,YAAY;EACd;AACF","file":"index.module.css","sourcesContent":[".footer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 100px;\n  width: 100%;\n\n  font-size: 20px;\n}\n\n.footer > div {\n  margin: 40px;\n}\n\n@media (max-width: 758px) {\n  .footer {\n    height: 70px;\n  }\n\n  .footer * {\n    margin: 12px;\n  }\n}\n"]}]);
+// Exports
+exports.locals = {
+	"footer": "Footer_footer__2vLgL"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/ImageGrid/index.module.css":
 /*!***************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/postcss-loader/src??__nextjs_postcss!./src/components/ImageGrid/index.module.css ***!
@@ -2046,6 +2063,24 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Menu/index.module.css":
+/*!**********************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/postcss-loader/src??__nextjs_postcss!./src/components/Menu/index.module.css ***!
+  \**********************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".Menu_menu__qW93N {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 50px;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n}\n\n.Menu_menuItem__1IcNa {\n  margin-right: 20px;\n  cursor: pointer;\n  text-decoration: none;\n  font-size: 22px;\n  color: black;\n  font-weight:700;\n}", "",{"version":3,"sources":["index.module.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,MAAM;EACN,WAAW;EACX,YAAY;EACZ,aAAa;EACb,yBAAyB;EACzB,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,qBAAqB;EACrB,eAAe;EACf,YAAY;EACZ,eAAe;AACjB","file":"index.module.css","sourcesContent":[".menu {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 50px;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n}\n\n.menuItem {\n  margin-right: 20px;\n  cursor: pointer;\n  text-decoration: none;\n  font-size: 22px;\n  color: black;\n  font-weight:700;\n}"]}]);
+// Exports
+exports.locals = {
+	"menu": "Menu_menu__qW93N",
+	"menuItem": "Menu_menuItem__1IcNa"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/index/index.module.css":
 /*!******************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/postcss-loader/src??__nextjs_postcss!./src/pages/index/index.module.css ***!
@@ -2055,12 +2090,10 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".index_layout__2oEH5 {\n  overflow: hidden;\n}\n\n.index_menu__2SOAr {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 50px;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n}\n\n.index_menuItem__213a- {\n  margin-right: 20px;\n  cursor: pointer;\n  text-decoration: none;\n  font-size: 22px;\n  color: black;\n  font-weight:700;\n}\n\n.index_titleContainer__oWbOM {\n  width: 100%;\n  height: 240px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  margin-top: 40px;\n}\n\n.index_statements__3w7Rz {\n  display: flex;\n  margin: 40px 40px 40px 40px;\n}\n\n.index_statement__1-m1m {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0 20px 0 20px;\n  width: 20%;\n}\n\n.index_title__3UV7f {\n  font-size: 140px;\n  letter-spacing: 0.05em;\n  font-style: normal;\n  font-weight: normal;\n}\n\n.index_punchline__1Urqt {\n  width: 100%;\n  margin-left: 150px;\n  margin-top: 30px;\n}\n\n.index_textBlocks__2_SKw {\n  display: flex;\n  justify-content: space-evenly;\n  margin: 40px 40px 60px 40px;\n}\n\n.index_textBlock__A-yl9 {\n  margin-right: 40px;\n  width: 50%;\n}\n\n.index_sectionHeader__2p_ub {\n  margin-left: 40px;\n}\n\n.index_people__1ETqG {\n  display: flex;\n  margin: 30px 40px 60px 40px;\n}\n\n.index_person__238Os {\n  position: relative;\n  width: 100%;\n  margin-right: 30px;\n}\n\n.index_avatar__2gQuD {\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.index_bio__1QYEg {\n  text-align: justify;\n}\n\n.index_videoWrapper__3AN_8 {\n  grid-area: video;\n  position: relative;\n  padding-bottom: 56.25%; /* 16:9 */\n  height: 0;\n  overflow: hidden;\n}\n\n.index_personName__QCZOJ {\n  font-weight: bolder;\n  margin-top: 15px;\n}\n\n.index_videoWrapper__3AN_8 iframe {\n  position: absolute;\n  top: 0px;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.index_videoOverlay__3RagB {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(white 0%, transparent 45%);\n  z-index: 100;\n}\n\n.index_events__jbz8P {\n  margin: 30px 40px 80px 40px;\n  overflow: hidden;\n}\n\n.index_event__JwMpr {\n  display: flex;\n}\n\n.index_eventContent__1u6yv,\n.index_eventImages__3QHz4 {\n  width: 50%;\n}\n\n.index_eventTitleBlock__3ktqb {\n  line-height: 30px;\n}\n\n.index_eventContent__1u6yv {\n  display: flex;\n  flex-direction: column;\n}\n\n.index_joinForm__11ckd {\n  margin: 30px 40px 60px 40px;\n  font-size: 20px;\n}\n\n.index_footer__1J9nd {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 100px;\n  width: 100%;\n\n  font-size: 20px;\n}\n\n.index_footer__1J9nd > div {\n  margin: 40px;\n}\n\n.index_carousel__3F69m {\n  margin: 50px 0 50px 0;\n}\n\n.index_galleryImg__3GPe_ {\n  display: flex;\n  position: relative;\n  align-items: flex-end;\n  background-size: cover;\n  background-position: 50%;\n  height: 100%;\n}\n\n.index_galleryImg__3GPe_:hover {\n  display: flex;\n  flex-direction: column;\n  height: 500px;\n  margin: -100px -120px 0 -120px;\n  z-index: 10;\n  overflow: visible;\n  box-shadow: 4px 4px 10px 3px #080808b3;\n}\n\n@-webkit-keyframes index_colorFlux__2j9IP {\n  0% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n  50% {\n    -webkit-filter: hue-rotate(360deg);\n            filter: hue-rotate(360deg);\n  }\n  100% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n}\n\n@keyframes index_colorFlux__2j9IP {\n  0% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n  50% {\n    -webkit-filter: hue-rotate(360deg);\n            filter: hue-rotate(360deg);\n  }\n  100% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n}\n\n@media (max-width: 758px) {\n  .index_sectionHeader__2p_ub {\n    width: 90%;\n    margin: auto;\n  }\n\n  .index_titleContainer__oWbOM {\n    height: 180px;\n    margin-bottom: 40px;\n  }\n\n  .index_punchline__1Urqt {\n    font-size: 18px;\n    margin-left: 80px;\n  }\n\n  .index_statements__3w7Rz {\n    flex-direction: column;\n    margin: auto;\n    width: 90%;\n  }\n\n  .index_people__1ETqG {\n    flex-direction: column;\n    margin: 30px 0 0 0;\n  }\n\n  .index_personBody__2fuYr {\n    width: 90%;\n    margin: auto;\n  }\n\n  .index_events__jbz8P {\n    margin: 40px 0 0 0;\n    width: 100%;\n  }\n\n  .index_event__JwMpr {\n    flex-direction: column-reverse;\n  }\n\n  .index_eventContent__1u6yv,\n  .index_eventImages__3QHz4 {\n    width: 100%;\n  }\n\n  .index_eventImages__3QHz4 {\n    height: 500px;\n    margin-bottom: 30px;\n  }\n\n  .index_eventContent__1u6yv {\n    width: 90%;\n    margin: 0 auto 40px auto;\n  }\n\n  .index_textBlocks__2_SKw {\n    flex-direction: column;\n    margin: 30px auto 0 auto;\n    width: 90%;\n  }\n\n  .index_textBlock__A-yl9 {\n    width: 100%;\n  }\n\n  .index_joinForm__11ckd {\n    margin: 30px 10px 60px 10px;\n  }\n\n  .index_footer__1J9nd {\n    height: 70px;\n  }\n\n  .index_footer__1J9nd * {\n    margin: 12px;\n  }\n}\n", "",{"version":3,"sources":["index.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,WAAW;EACX,YAAY;EACZ,aAAa;EACb,yBAAyB;EACzB,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,qBAAqB;EACrB,eAAe;EACf,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,gBAAgB;EAChB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,2BAA2B;AAC7B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,qBAAqB;EACrB,UAAU;AACZ;;AAEA;EACE,gBAAgB;EAChB,sBAAsB;EACtB,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,sBAAsB,EAAE,SAAS;EACjC,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,QAAQ;EACR,OAAO;EACP,WAAW;EACX,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,sDAAsD;EACtD,YAAY;AACd;;AAEA;EACE,2BAA2B;EAC3B,gBAAgB;AAClB;;AAEA;EACE,aAAa;AACf;;AAEA;;EAEE,UAAU;AACZ;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,2BAA2B;EAC3B,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,aAAa;EACb,WAAW;;EAEX,eAAe;AACjB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,qBAAqB;EACrB,sBAAsB;EACtB,wBAAwB;EACxB,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,aAAa;EACb,8BAA8B;EAC9B,WAAW;EACX,iBAAiB;EACjB,sCAAsC;AACxC;;AAEA;EACE;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;AACF;;AAVA;EACE;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;AACF;;AAEA;EACE;IACE,UAAU;IACV,YAAY;EACd;;EAEA;IACE,aAAa;IACb,mBAAmB;EACrB;;EAEA;IACE,eAAe;IACf,iBAAiB;EACnB;;EAEA;IACE,sBAAsB;IACtB,YAAY;IACZ,UAAU;EACZ;;EAEA;IACE,sBAAsB;IACtB,kBAAkB;EACpB;;EAEA;IACE,UAAU;IACV,YAAY;EACd;;EAEA;IACE,kBAAkB;IAClB,WAAW;EACb;;EAEA;IACE,8BAA8B;EAChC;;EAEA;;IAEE,WAAW;EACb;;EAEA;IACE,aAAa;IACb,mBAAmB;EACrB;;EAEA;IACE,UAAU;IACV,wBAAwB;EAC1B;;EAEA;IACE,sBAAsB;IACtB,wBAAwB;IACxB,UAAU;EACZ;;EAEA;IACE,WAAW;EACb;;EAEA;IACE,2BAA2B;EAC7B;;EAEA;IACE,YAAY;EACd;;EAEA;IACE,YAAY;EACd;AACF","file":"index.module.css","sourcesContent":[".layout {\n  overflow: hidden;\n}\n\n.menu {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 50px;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n}\n\n.menuItem {\n  margin-right: 20px;\n  cursor: pointer;\n  text-decoration: none;\n  font-size: 22px;\n  color: black;\n  font-weight:700;\n}\n\n.titleContainer {\n  width: 100%;\n  height: 240px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  margin-top: 40px;\n}\n\n.statements {\n  display: flex;\n  margin: 40px 40px 40px 40px;\n}\n\n.statement {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0 20px 0 20px;\n  width: 20%;\n}\n\n.title {\n  font-size: 140px;\n  letter-spacing: 0.05em;\n  font-style: normal;\n  font-weight: normal;\n}\n\n.punchline {\n  width: 100%;\n  margin-left: 150px;\n  margin-top: 30px;\n}\n\n.textBlocks {\n  display: flex;\n  justify-content: space-evenly;\n  margin: 40px 40px 60px 40px;\n}\n\n.textBlock {\n  margin-right: 40px;\n  width: 50%;\n}\n\n.sectionHeader {\n  margin-left: 40px;\n}\n\n.people {\n  display: flex;\n  margin: 30px 40px 60px 40px;\n}\n\n.person {\n  position: relative;\n  width: 100%;\n  margin-right: 30px;\n}\n\n.avatar {\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.bio {\n  text-align: justify;\n}\n\n.videoWrapper {\n  grid-area: video;\n  position: relative;\n  padding-bottom: 56.25%; /* 16:9 */\n  height: 0;\n  overflow: hidden;\n}\n\n.personName {\n  font-weight: bolder;\n  margin-top: 15px;\n}\n\n.videoWrapper iframe {\n  position: absolute;\n  top: 0px;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.videoOverlay {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(white 0%, transparent 45%);\n  z-index: 100;\n}\n\n.events {\n  margin: 30px 40px 80px 40px;\n  overflow: hidden;\n}\n\n.event {\n  display: flex;\n}\n\n.eventContent,\n.eventImages {\n  width: 50%;\n}\n\n.eventTitleBlock {\n  line-height: 30px;\n}\n\n.eventContent {\n  display: flex;\n  flex-direction: column;\n}\n\n.joinForm {\n  margin: 30px 40px 60px 40px;\n  font-size: 20px;\n}\n\n.footer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 100px;\n  width: 100%;\n\n  font-size: 20px;\n}\n\n.footer > div {\n  margin: 40px;\n}\n\n.carousel {\n  margin: 50px 0 50px 0;\n}\n\n.galleryImg {\n  display: flex;\n  position: relative;\n  align-items: flex-end;\n  background-size: cover;\n  background-position: 50%;\n  height: 100%;\n}\n\n.galleryImg:hover {\n  display: flex;\n  flex-direction: column;\n  height: 500px;\n  margin: -100px -120px 0 -120px;\n  z-index: 10;\n  overflow: visible;\n  box-shadow: 4px 4px 10px 3px #080808b3;\n}\n\n@keyframes colorFlux {\n  0% {\n    filter: hue-rotate(180deg);\n  }\n  50% {\n    filter: hue-rotate(360deg);\n  }\n  100% {\n    filter: hue-rotate(180deg);\n  }\n}\n\n@media (max-width: 758px) {\n  .sectionHeader {\n    width: 90%;\n    margin: auto;\n  }\n\n  .titleContainer {\n    height: 180px;\n    margin-bottom: 40px;\n  }\n\n  .punchline {\n    font-size: 18px;\n    margin-left: 80px;\n  }\n\n  .statements {\n    flex-direction: column;\n    margin: auto;\n    width: 90%;\n  }\n\n  .people {\n    flex-direction: column;\n    margin: 30px 0 0 0;\n  }\n\n  .personBody {\n    width: 90%;\n    margin: auto;\n  }\n\n  .events {\n    margin: 40px 0 0 0;\n    width: 100%;\n  }\n\n  .event {\n    flex-direction: column-reverse;\n  }\n\n  .eventContent,\n  .eventImages {\n    width: 100%;\n  }\n\n  .eventImages {\n    height: 500px;\n    margin-bottom: 30px;\n  }\n\n  .eventContent {\n    width: 90%;\n    margin: 0 auto 40px auto;\n  }\n\n  .textBlocks {\n    flex-direction: column;\n    margin: 30px auto 0 auto;\n    width: 90%;\n  }\n\n  .textBlock {\n    width: 100%;\n  }\n\n  .joinForm {\n    margin: 30px 10px 60px 10px;\n  }\n\n  .footer {\n    height: 70px;\n  }\n\n  .footer * {\n    margin: 12px;\n  }\n}\n"]}]);
+exports.push([module.i, ".index_layout__2oEH5 {\n  overflow: hidden;\n}\n\n.index_titleContainer__oWbOM {\n  width: 100%;\n  height: 240px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  margin-top: 40px;\n}\n\n.index_statements__3w7Rz {\n  display: flex;\n  margin: 40px 40px 40px 40px;\n}\n\n.index_statement__1-m1m {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0 20px 0 20px;\n  width: 20%;\n}\n\n.index_title__3UV7f {\n  font-size: 140px;\n  letter-spacing: 0.05em;\n  font-style: normal;\n  font-weight: normal;\n}\n\n.index_punchline__1Urqt {\n  width: 100%;\n  margin-left: 150px;\n  margin-top: 30px;\n}\n\n.index_textBlocks__2_SKw {\n  display: flex;\n  justify-content: space-evenly;\n  margin: 40px 40px 60px 40px;\n}\n\n.index_textBlock__A-yl9 {\n  margin-right: 40px;\n  width: 50%;\n}\n\n.index_sectionHeader__2p_ub {\n  margin-left: 40px;\n}\n\n.index_people__1ETqG {\n  display: flex;\n  margin: 30px 40px 60px 40px;\n}\n\n.index_person__238Os {\n  position: relative;\n  width: 100%;\n  margin-right: 30px;\n}\n\n.index_avatar__2gQuD {\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.index_bio__1QYEg {\n  text-align: justify;\n}\n\n.index_videoWrapper__3AN_8 {\n  grid-area: video;\n  position: relative;\n  padding-bottom: 56.25%; /* 16:9 */\n  height: 0;\n  overflow: hidden;\n}\n\n.index_personName__QCZOJ {\n  font-weight: bolder;\n  margin-top: 15px;\n}\n\n.index_videoWrapper__3AN_8 iframe {\n  position: absolute;\n  top: 0px;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.index_videoOverlay__3RagB {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(white 0%, transparent 45%);\n  z-index: 100;\n}\n\n.index_events__jbz8P {\n  margin: 30px 40px 80px 40px;\n  overflow: hidden;\n}\n\n.index_event__JwMpr {\n  display: flex;\n}\n\n.index_eventContent__1u6yv,\n.index_eventImages__3QHz4 {\n  width: 50%;\n}\n\n.index_eventTitleBlock__3ktqb {\n  line-height: 30px;\n}\n\n.index_eventContent__1u6yv {\n  display: flex;\n  flex-direction: column;\n}\n\n.index_joinForm__11ckd {\n  margin: 30px 40px 60px 40px;\n  font-size: 20px;\n}\n\n.index_carousel__3F69m {\n  margin: 50px 0 50px 0;\n}\n\n.index_galleryImg__3GPe_ {\n  display: flex;\n  position: relative;\n  align-items: flex-end;\n  background-size: cover;\n  background-position: 50%;\n  height: 100%;\n}\n\n.index_galleryImg__3GPe_:hover {\n  display: flex;\n  flex-direction: column;\n  height: 500px;\n  margin: -100px -120px 0 -120px;\n  z-index: 10;\n  overflow: visible;\n  box-shadow: 4px 4px 10px 3px #080808b3;\n}\n\n@-webkit-keyframes index_colorFlux__2j9IP {\n  0% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n  50% {\n    -webkit-filter: hue-rotate(360deg);\n            filter: hue-rotate(360deg);\n  }\n  100% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n}\n\n@keyframes index_colorFlux__2j9IP {\n  0% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n  50% {\n    -webkit-filter: hue-rotate(360deg);\n            filter: hue-rotate(360deg);\n  }\n  100% {\n    -webkit-filter: hue-rotate(180deg);\n            filter: hue-rotate(180deg);\n  }\n}\n\n@media (max-width: 758px) {\n  .index_sectionHeader__2p_ub {\n    width: 90%;\n    margin: auto;\n  }\n\n  .index_titleContainer__oWbOM {\n    height: 180px;\n    margin-bottom: 40px;\n  }\n\n  .index_punchline__1Urqt {\n    font-size: 18px;\n    margin-left: 80px;\n  }\n\n  .index_statements__3w7Rz {\n    flex-direction: column;\n    margin: auto;\n    width: 90%;\n  }\n\n  .index_people__1ETqG {\n    flex-direction: column;\n    margin: 30px 0 0 0;\n  }\n\n  .index_personBody__2fuYr {\n    width: 90%;\n    margin: auto;\n  }\n\n  .index_events__jbz8P {\n    margin: 40px 0 0 0;\n    width: 100%;\n  }\n\n  .index_event__JwMpr {\n    flex-direction: column-reverse;\n  }\n\n  .index_eventContent__1u6yv,\n  .index_eventImages__3QHz4 {\n    width: 100%;\n  }\n\n  .index_eventImages__3QHz4 {\n    height: 500px;\n    margin-bottom: 30px;\n  }\n\n  .index_eventContent__1u6yv {\n    width: 90%;\n    margin: 0 auto 40px auto;\n  }\n\n  .index_textBlocks__2_SKw {\n    flex-direction: column;\n    margin: 30px auto 0 auto;\n    width: 90%;\n  }\n\n  .index_textBlock__A-yl9 {\n    width: 100%;\n  }\n\n  .index_joinForm__11ckd {\n    margin: 30px 10px 60px 10px;\n  }\n}\n", "",{"version":3,"sources":["index.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,gBAAgB;EAChB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,2BAA2B;AAC7B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,qBAAqB;EACrB,UAAU;AACZ;;AAEA;EACE,gBAAgB;EAChB,sBAAsB;EACtB,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,sBAAsB,EAAE,SAAS;EACjC,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,QAAQ;EACR,OAAO;EACP,WAAW;EACX,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,sDAAsD;EACtD,YAAY;AACd;;AAEA;EACE,2BAA2B;EAC3B,gBAAgB;AAClB;;AAEA;EACE,aAAa;AACf;;AAEA;;EAEE,UAAU;AACZ;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,2BAA2B;EAC3B,eAAe;AACjB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,qBAAqB;EACrB,sBAAsB;EACtB,wBAAwB;EACxB,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,aAAa;EACb,8BAA8B;EAC9B,WAAW;EACX,iBAAiB;EACjB,sCAAsC;AACxC;;AAEA;EACE;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;AACF;;AAVA;EACE;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;EACA;IACE,kCAA0B;YAA1B,0BAA0B;EAC5B;AACF;;AAEA;EACE;IACE,UAAU;IACV,YAAY;EACd;;EAEA;IACE,aAAa;IACb,mBAAmB;EACrB;;EAEA;IACE,eAAe;IACf,iBAAiB;EACnB;;EAEA;IACE,sBAAsB;IACtB,YAAY;IACZ,UAAU;EACZ;;EAEA;IACE,sBAAsB;IACtB,kBAAkB;EACpB;;EAEA;IACE,UAAU;IACV,YAAY;EACd;;EAEA;IACE,kBAAkB;IAClB,WAAW;EACb;;EAEA;IACE,8BAA8B;EAChC;;EAEA;;IAEE,WAAW;EACb;;EAEA;IACE,aAAa;IACb,mBAAmB;EACrB;;EAEA;IACE,UAAU;IACV,wBAAwB;EAC1B;;EAEA;IACE,sBAAsB;IACtB,wBAAwB;IACxB,UAAU;EACZ;;EAEA;IACE,WAAW;EACb;;EAEA;IACE,2BAA2B;EAC7B;AACF","file":"index.module.css","sourcesContent":[".layout {\n  overflow: hidden;\n}\n\n.titleContainer {\n  width: 100%;\n  height: 240px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  margin-top: 40px;\n}\n\n.statements {\n  display: flex;\n  margin: 40px 40px 40px 40px;\n}\n\n.statement {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0 20px 0 20px;\n  width: 20%;\n}\n\n.title {\n  font-size: 140px;\n  letter-spacing: 0.05em;\n  font-style: normal;\n  font-weight: normal;\n}\n\n.punchline {\n  width: 100%;\n  margin-left: 150px;\n  margin-top: 30px;\n}\n\n.textBlocks {\n  display: flex;\n  justify-content: space-evenly;\n  margin: 40px 40px 60px 40px;\n}\n\n.textBlock {\n  margin-right: 40px;\n  width: 50%;\n}\n\n.sectionHeader {\n  margin-left: 40px;\n}\n\n.people {\n  display: flex;\n  margin: 30px 40px 60px 40px;\n}\n\n.person {\n  position: relative;\n  width: 100%;\n  margin-right: 30px;\n}\n\n.avatar {\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.bio {\n  text-align: justify;\n}\n\n.videoWrapper {\n  grid-area: video;\n  position: relative;\n  padding-bottom: 56.25%; /* 16:9 */\n  height: 0;\n  overflow: hidden;\n}\n\n.personName {\n  font-weight: bolder;\n  margin-top: 15px;\n}\n\n.videoWrapper iframe {\n  position: absolute;\n  top: 0px;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.videoOverlay {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(white 0%, transparent 45%);\n  z-index: 100;\n}\n\n.events {\n  margin: 30px 40px 80px 40px;\n  overflow: hidden;\n}\n\n.event {\n  display: flex;\n}\n\n.eventContent,\n.eventImages {\n  width: 50%;\n}\n\n.eventTitleBlock {\n  line-height: 30px;\n}\n\n.eventContent {\n  display: flex;\n  flex-direction: column;\n}\n\n.joinForm {\n  margin: 30px 40px 60px 40px;\n  font-size: 20px;\n}\n\n.carousel {\n  margin: 50px 0 50px 0;\n}\n\n.galleryImg {\n  display: flex;\n  position: relative;\n  align-items: flex-end;\n  background-size: cover;\n  background-position: 50%;\n  height: 100%;\n}\n\n.galleryImg:hover {\n  display: flex;\n  flex-direction: column;\n  height: 500px;\n  margin: -100px -120px 0 -120px;\n  z-index: 10;\n  overflow: visible;\n  box-shadow: 4px 4px 10px 3px #080808b3;\n}\n\n@keyframes colorFlux {\n  0% {\n    filter: hue-rotate(180deg);\n  }\n  50% {\n    filter: hue-rotate(360deg);\n  }\n  100% {\n    filter: hue-rotate(180deg);\n  }\n}\n\n@media (max-width: 758px) {\n  .sectionHeader {\n    width: 90%;\n    margin: auto;\n  }\n\n  .titleContainer {\n    height: 180px;\n    margin-bottom: 40px;\n  }\n\n  .punchline {\n    font-size: 18px;\n    margin-left: 80px;\n  }\n\n  .statements {\n    flex-direction: column;\n    margin: auto;\n    width: 90%;\n  }\n\n  .people {\n    flex-direction: column;\n    margin: 30px 0 0 0;\n  }\n\n  .personBody {\n    width: 90%;\n    margin: auto;\n  }\n\n  .events {\n    margin: 40px 0 0 0;\n    width: 100%;\n  }\n\n  .event {\n    flex-direction: column-reverse;\n  }\n\n  .eventContent,\n  .eventImages {\n    width: 100%;\n  }\n\n  .eventImages {\n    height: 500px;\n    margin-bottom: 30px;\n  }\n\n  .eventContent {\n    width: 90%;\n    margin: 0 auto 40px auto;\n  }\n\n  .textBlocks {\n    flex-direction: column;\n    margin: 30px auto 0 auto;\n    width: 90%;\n  }\n\n  .textBlock {\n    width: 100%;\n  }\n\n  .joinForm {\n    margin: 30px 10px 60px 10px;\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"layout": "index_layout__2oEH5",
-	"menu": "index_menu__2SOAr",
-	"menuItem": "index_menuItem__213a-",
 	"titleContainer": "index_titleContainer__oWbOM",
 	"statements": "index_statements__3w7Rz",
 	"statement": "index_statement__1-m1m",
@@ -2082,7 +2115,6 @@ exports.locals = {
 	"eventImages": "index_eventImages__3QHz4",
 	"eventTitleBlock": "index_eventTitleBlock__3ktqb",
 	"joinForm": "index_joinForm__11ckd",
-	"footer": "index_footer__1J9nd",
 	"carousel": "index_carousel__3F69m",
 	"galleryImg": "index_galleryImg__3GPe_",
 	"personBody": "index_personBody__2fuYr",
@@ -76701,6 +76733,121 @@ ErrorMessage.defaultProps = {
 
 /***/ }),
 
+/***/ "./src/components/Footer/index.module.css":
+/*!************************************************!*\
+  !*** ./src/components/Footer/index.module.css ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!./index.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Footer/index.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!./index.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Footer/index.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!./index.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Footer/index.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./src/components/Footer/index.tsx":
+/*!*****************************************!*\
+  !*** ./src/components/Footer/index.tsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.module.css */ "./src/components/Footer/index.module.css");
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_module_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/kif/pr/flux/web/src/components/Footer/index.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var Footer = function Footer() {
+  return __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.footer,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "\xA9 2020 Flux."), __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "Made by", ' ', __jsx("a", {
+    href: "https://codercat.tk",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, "CODERCAT")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
 /***/ "./src/components/ImageGrid/index.module.css":
 /*!***************************************************!*\
   !*** ./src/components/ImageGrid/index.module.css ***!
@@ -77394,6 +77541,143 @@ Logo.defaultProps = {
 
 /***/ }),
 
+/***/ "./src/components/Menu/index.module.css":
+/*!**********************************************!*\
+  !*** ./src/components/Menu/index.module.css ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!./index.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Menu/index.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!./index.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Menu/index.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!./index.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Menu/index.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./src/components/Menu/index.tsx":
+/*!***************************************!*\
+  !*** ./src/components/Menu/index.tsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.module.css */ "./src/components/Menu/index.module.css");
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_module_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils */ "./src/utils/index.ts");
+var _jsxFileName = "/Users/kif/pr/flux/web/src/components/Menu/index.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+var Menu = function Menu() {
+  var items = [{
+    name: '.Home',
+    path: '/'
+  }, {
+    name: '.About',
+    path: '/about'
+  }];
+  var pathname = '/';
+
+  if (true) {
+    pathname = next_router__WEBPACK_IMPORTED_MODULE_3___default.a.pathname;
+  }
+
+  console.log('[D] pathname: ', pathname);
+  var menuElements = items.map(function (i) {
+    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      key: i.name,
+      href: Object(_utils__WEBPACK_IMPORTED_MODULE_4__["prefix"])(i.path),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, __jsx("a", {
+      className: _index_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.menuItem,
+      style: i.path === pathname ? {
+        color: "rgb(14, 225, 221)"
+      } : {},
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }, i.name));
+  });
+  return __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.menu,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, menuElements);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Menu);
+
+/***/ }),
+
 /***/ "./src/pages/index/index.module.css":
 /*!******************************************!*\
   !*** ./src/pages/index/index.module.css ***!
@@ -77468,18 +77752,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var use_media__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! use-media */ "./node_modules/use-media/lib/index.js");
 /* harmony import */ var use_media__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(use_media__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-ga */ "./node_modules/react-ga/dist/esm/index.js");
-/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index.module.css */ "./src/pages/index/index.module.css");
-/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_index_module_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_JoinForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/JoinForm */ "./src/components/JoinForm/index.tsx");
-/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Button */ "./src/components/Button/index.tsx");
-/* harmony import */ var _components_Carousel__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/Carousel */ "./src/components/Carousel/index.js");
-/* harmony import */ var _components_Logo__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/Logo */ "./src/components/Logo/index.js");
-/* harmony import */ var _components_ImageGrid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/ImageGrid */ "./src/components/ImageGrid/index.tsx");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-ga */ "./node_modules/react-ga/dist/esm/index.js");
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.module.css */ "./src/pages/index/index.module.css");
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_module_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_JoinForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/JoinForm */ "./src/components/JoinForm/index.tsx");
+/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/Button */ "./src/components/Button/index.tsx");
+/* harmony import */ var _components_Carousel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Carousel */ "./src/components/Carousel/index.js");
+/* harmony import */ var _components_Logo__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/Logo */ "./src/components/Logo/index.js");
+/* harmony import */ var _components_ImageGrid__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/ImageGrid */ "./src/components/ImageGrid/index.tsx");
+/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/Menu */ "./src/components/Menu/index.tsx");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/Footer */ "./src/components/Footer/index.tsx");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../utils */ "./src/utils/index.ts");
 var _jsxFileName = "/Users/kif/pr/flux/web/src/pages/index/index.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -77495,21 +77780,18 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var prefix = function prefix(name) {
-  return "".concat("", "/").concat(name);
-};
 
 var people = [{
   name: 'Kirill Kovalevskiy',
-  avatar: 'kirill_avatar.jpg',
+  avatar: '/kirill_avatar.jpg',
   bio: "There is a question that adults often ask to kids \"Who do you\n      want to be when you grow up?\". While most of the kids would say\n      a fire fighter, a doctor or a policeman, my answer was \"I want\n      to be a robot\". I think that by and large I succeeded."
 }, {
   name: 'Sneha Belkhale',
-  avatar: 'sneha_avatar.jpg',
+  avatar: '/sneha_avatar.jpg',
   bio: "A beautiful creature,\n      shy on outside but with strong rebel spirit inside,\n      and a unique combinations of abilities.\n      She creates VR games, generates music with math and code, and\n      walks 6 miles a day religiously and eats Trader Joes veggie wrap.\n      She is passionate about minimalism and location independent lifestyles."
 }, {
   name: 'Yulia Tolmacheva',
-  avatar: 'yulia_avatar.jpg',
+  avatar: '/yulia_avatar.jpg',
   bio: "I'm a UX/UI designer obsessed with translating users design needs\n      to empathetic solutions and bridging the gap between users and their goals.\n      I try to surround myself with enthusiastic individuals who think differen tly.\n      I want to live in a world where we can learn to understand and communicate\n      with each other freely, embracing our different cultures."
 }];
 
@@ -77523,8 +77805,8 @@ var Index = function Index() {
   var totalTbilisiImages = 9;
   var tbilisiImages = [];
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    react_ga__WEBPACK_IMPORTED_MODULE_4__["default"].initialize('UA-100222662-1');
-    react_ga__WEBPACK_IMPORTED_MODULE_4__["default"].pageview(window.location.pathname + window.location.search);
+    react_ga__WEBPACK_IMPORTED_MODULE_3__["default"].initialize('UA-100222662-1');
+    react_ga__WEBPACK_IMPORTED_MODULE_3__["default"].pageview(window.location.pathname + window.location.search);
   }, []);
 
   for (var i = 1; i < totalTbilisiImages + 1; i += 1) {
@@ -77534,7 +77816,7 @@ var Index = function Index() {
   for (var _i = 1; _i < totalImages; _i += 1) {
     galleryElements.push(__jsx("div", {
       key: _i,
-      className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.galleryImg,
+      className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.galleryImg,
       style: {
         backgroundImage: "url(gallery/img_".concat(_i, ".jpg)")
       },
@@ -77548,7 +77830,7 @@ var Index = function Index() {
 
   var peopleElements = people.map(function (person) {
     return __jsx("div", {
-      className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.person,
+      className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.person,
       key: person.name,
       __source: {
         fileName: _jsxFileName,
@@ -77556,8 +77838,8 @@ var Index = function Index() {
       },
       __self: this
     }, __jsx("img", {
-      className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.avatar,
-      src: prefix(person.avatar),
+      className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.avatar,
+      src: Object(_utils__WEBPACK_IMPORTED_MODULE_12__["prefix"])(person.avatar),
       alt: person.avatar,
       __source: {
         fileName: _jsxFileName,
@@ -77565,21 +77847,21 @@ var Index = function Index() {
       },
       __self: this
     }), __jsx("div", {
-      className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.personBody,
+      className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.personBody,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 81
       },
       __self: this
     }, __jsx("h3", {
-      className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.personName,
+      className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.personName,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 82
       },
       __self: this
     }, person.name), __jsx("p", {
-      className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.bio,
+      className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.bio,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 83
@@ -77588,13 +77870,13 @@ var Index = function Index() {
     }, person.bio)));
   });
   return __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.layout,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.layout,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 89
     },
     __self: this
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 90
@@ -77614,116 +77896,106 @@ var Index = function Index() {
       lineNumber: 92
     },
     __self: this
-  })), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.menu,
+  })), __jsx(_components_Menu__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 95
     },
     __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: prefix(''),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: this
-  }, __jsx("a", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.menuItem,
+  }), __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.titleContainer,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 97
     },
     __self: this
-  }, ".Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: prefix('about'),
+  }, __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.titleBlock,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
+  }, __jsx(_components_Logo__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    scale: isMobile ? 0.4 : 0.75,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 99
     },
     __self: this
-  }, __jsx("a", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.menuItem,
+  }), __jsx("h3", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.punchline,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 100
     },
     __self: this
-  }, ".About"))), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.titleContainer,
+  }, "join the remote revolution"))), __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.statements,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 104
     },
     __self: this
   }, __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.titleBlock,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.statement,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 105
     },
     __self: this
-  }, __jsx(_components_Logo__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    scale: isMobile ? 0.4 : 0.75,
+  }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 106
     },
     __self: this
-  }), __jsx("h3", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.punchline,
+  }, "WHO?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 107
     },
     __self: this
-  }, "join the remote revolution"))), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.statements,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111
-    },
-    __self: this
-  }, __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.statement,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 112
-    },
-    __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113
-    },
-    __self: this
-  }, "WHO?"), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114
-    },
-    __self: this
   }, "We are group of travelers, entrepreneurs, engineers and artist.")), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.statement,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.statement,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 109
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 110
     },
     __self: this
   }, "WHAT?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 111
     },
     __self: this
   }, "A one month coliving and coworking gathering.")), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.statement,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.statement,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: this
+  }, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }, "WHY?"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
+    },
+    __self: this
+  }, "We believe in a remote future and balanced lifestyle outside of office cubicles.")), __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.statement,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 120
@@ -77735,67 +78007,48 @@ var Index = function Index() {
       lineNumber: 121
     },
     __self: this
-  }, "WHY?"), __jsx("p", {
+  }, "WHERE?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 122
     },
     __self: this
-  }, "We believe in a remote future and balanced lifestyle outside of office cubicles.")), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.statement,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 127
-    },
-    __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 128
-    },
-    __self: this
-  }, "WHERE?"), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 129
-    },
-    __self: this
   }, "Tbilisi, Georgia")), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.statement,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.statement,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 124
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 125
     },
     __self: this
   }, "WHEN?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 126
     },
     __self: this
   }, "June 1 - 30, 2020"))), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.videoWrapper,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.videoWrapper,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 130
     },
     __self: this
   }, __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.videoOverlay,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.videoOverlay,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 131
     },
     __self: this
   }), __jsx("iframe", {
     id: "video",
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.video,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.video,
     width: "100%",
     height: "600px",
     src: "https://www.youtube.com/embed/TzrbSXzNUhA?autoplay=".concat(autoplay, "&amp;loop=1&amp;enablejsapi=1&amp;&amp;playerapiid=featuredytplayer&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;iv_load_policy=3&amp;theme=light&amp;wmode=transparent&amp;mute=1&amp;playlist=TzrbSXzNUhA"),
@@ -77803,237 +78056,231 @@ var Index = function Index() {
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 132
     },
     __self: this
   })), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.textBlocks,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.textBlocks,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 143
     },
     __self: this
   }, __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.textBlock,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.textBlock,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 144
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152
+      lineNumber: 145
     },
     __self: this
   }, "What is Flux?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 146
     },
     __self: this
   }, "Flux is a one month gathering of creative and open minded individuals in vibrant locations around the world. We like to cultivate a space for technology, art, peer to peer education, and a location independent lifestyle. We believe the time spent working and living together will facilitate connections, friendship, and collaboration.")), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.textBlock,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.textBlock,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 162
+      lineNumber: 155
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163
+      lineNumber: 156
     },
     __self: this
   }, "Who is Flux for?"), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 157
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 158
     },
     __self: this
   }, "Digital Nomads who are looking to connect with the local and global community", ' '), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169
+      lineNumber: 162
     },
     __self: this
   }, "People who are interested in a location independent life style but don't know where to start"), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 173
+      lineNumber: 166
     },
     __self: this
   }, "Artists, hackers and technology enthusiast of any kind")), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175
+      lineNumber: 168
     },
     __self: this
-  }))), __jsx(_components_Carousel__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.carousel,
+  }))), __jsx(_components_Carousel__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.carousel,
     height: 280,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 172
+    },
+    __self: this
+  }, galleryElements), __jsx("h2", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.sectionHeader,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 176
+    },
+    __self: this
+  }, "Events"), __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.events,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 178
+    },
+    __self: this
+  }, __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.event,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 179
     },
     __self: this
-  }, galleryElements), __jsx("h2", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.sectionHeader,
+  }, __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.eventContent,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183
-    },
-    __self: this
-  }, "Events"), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.events,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 185
+      lineNumber: 180
     },
     __self: this
   }, __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.event,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.eventTitleBlock,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 186
-    },
-    __self: this
-  }, __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.eventContent,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 187
-    },
-    __self: this
-  }, __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.eventTitleBlock,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 188
+      lineNumber: 181
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189
+      lineNumber: 182
     },
     __self: this
   }, "Tbilisi, Georgia"), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190
+      lineNumber: 183
     },
     __self: this
   }, "09.01 - 09.31. 2020"), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191
+      lineNumber: 184
     },
     __self: this
   }, "Price: $300")), __jsx("p", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.eventDescription,
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.eventDescription,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 194
+      lineNumber: 187
     },
     __self: this
   }, "Tbilisi, the capital of Georgia, is a unique and uprising destination for digital nomads. The combination of low prices, one year visas, vibrant culture, and rich young community, makes it a perfect spot for a Flux gathering."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 200
+      lineNumber: 193
     },
     __self: this
   }, "//TODO: We are very exited to host Flux in Tbilisi and connect with other Fluxers and local people."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 204
+      lineNumber: 197
     },
     __self: this
-  }, "We are renting a large 3 bedroom apartment in the city around Fabrika - a famous art and tech hub in Marjanishvili district. It is a very walkable area popular among younger locals, located a 25 minute walk from the Old Town."), __jsx(_components_Button__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.joinButton,
+  }, "We are renting a large 3 bedroom apartment in the city around Fabrika - a famous art and tech hub in Marjanishvili district. It is a very walkable area popular among younger locals, located a 25 minute walk from the Old Town."), __jsx(_components_Button__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.joinButton,
     text: "Join",
     onClick: function onClick() {
       return window.scrollTo(0, 9999);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210
+      lineNumber: 203
     },
     __self: this
-  })), __jsx(_components_ImageGrid__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.eventImages,
+  })), __jsx(_components_ImageGrid__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.eventImages,
     urls: tbilisiImages,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 209
+    },
+    __self: this
+  }))), __jsx("h2", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.sectionHeader,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 213
+    },
+    __self: this
+  }, "People"), __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.people,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 214
+    },
+    __self: this
+  }, peopleElements), __jsx("h2", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.sectionHeader,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 216
     },
     __self: this
-  }))), __jsx("h2", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.sectionHeader,
+  }, "Join"), __jsx(_components_JoinForm__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    containerClass: _index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.joinForm,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 220
+      lineNumber: 217
     },
     __self: this
-  }, "People"), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.people,
+  }), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 221
+      lineNumber: 219
     },
     __self: this
-  }, peopleElements), __jsx("h2", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.sectionHeader,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 223
-    },
-    __self: this
-  }, "Join"), __jsx(_components_JoinForm__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    containerClass: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.joinForm,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 224
-    },
-    __self: this
-  }), __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.footer,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 226
-    },
-    __self: this
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 227
-    },
-    __self: this
-  }, "\xA9 2020 Flux."), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 228
-    },
-    __self: this
-  }, "Made by", ' ', __jsx("a", {
-    href: "https://codercat.tk",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 230
-    },
-    __self: this
-  }, "CODERCAT"))));
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
+
+/***/ }),
+
+/***/ "./src/utils/index.ts":
+/*!****************************!*\
+  !*** ./src/utils/index.ts ***!
+  \****************************/
+/*! exports provided: prefix */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prefix", function() { return prefix; });
+var prefix = function prefix(name) {
+  return "".concat("").concat(name);
+};
 
 /***/ }),
 
