@@ -1,6 +1,5 @@
 import { FC, useEffect } from 'react';
 import useMedia from 'use-media';
-import Link from 'next/link';
 import Head from 'next/head';
 import ReactGA from 'react-ga';
 import s from './index.module.css';
@@ -9,13 +8,14 @@ import Button from '../../components/Button';
 import Carousel from '../../components/Carousel';
 import Logo from '../../components/Logo';
 import ImageGrid from '../../components/ImageGrid';
-
-const prefix = (name: string): string => `${process.env.prefix}/${name}`;
+import Menu from '../../components/Menu';
+import Footer from '../../components/Footer';
+import { prefix } from '../../utils';
 
 const people = [
   {
     name: 'Kirill Kovalevskiy',
-    avatar: 'kirill_avatar.jpg',
+    avatar: '/kirill_avatar.jpg',
     bio: `There is a question that adults often ask to kids "Who do you
       want to be when you grow up?". While most of the kids would say
       a fire fighter, a doctor or a policeman, my answer was "I want
@@ -23,7 +23,7 @@ const people = [
   },
   {
     name: 'Sneha Belkhale',
-    avatar: 'sneha_avatar.jpg',
+    avatar: '/sneha_avatar.jpg',
     bio: `A beautiful creature,
       shy on outside but with strong rebel spirit inside,
       and a unique combinations of abilities.
@@ -33,7 +33,7 @@ const people = [
   },
   {
     name: 'Yulia Tolmacheva',
-    avatar: 'yulia_avatar.jpg',
+    avatar: '/yulia_avatar.jpg',
     bio: `I'm a UX/UI designer obsessed with translating users design needs
       to empathetic solutions and bridging the gap between users and their goals.
       I try to surround myself with enthusiastic individuals who think differen tly.
@@ -92,14 +92,7 @@ const Index: FC = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className={s.menu}>
-        <Link href={prefix('')}>
-          <a className={s.menuItem}>.Home</a>
-        </Link>
-        <Link href={prefix('about')}>
-          <a className={s.menuItem}>.About</a>
-        </Link>
-      </div>
+      <Menu />
 
       <div className={s.titleContainer}>
         <div className={s.titleBlock}>
@@ -223,19 +216,7 @@ const Index: FC = () => {
       <h2 className={s.sectionHeader}>Join</h2>
       <JoinForm containerClass={s.joinForm} />
 
-      <div className={s.footer}>
-        <div>© 2020 Flux.</div>
-        <div>
-          Made by{' '}
-          <a
-            href="https://codercat.tk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CODERCAT
-          </a>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };

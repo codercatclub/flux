@@ -1,14 +1,28 @@
-.container h1 {
-  position: absolute;
-  font-size: 120px;
+.center {
+  width: 60%;
+  margin: auto;
 }
 
-.container h1:nth-child(2) {
-  color: red;
-  margin-left: 5px;
+.center h1 {
+  font-size: 110px;
+  font-weight: 500;
+  margin: 80px 0 80px 0;
+  text-decoration: underline;
 }
 
-.container h1:nth-child(1) {
-  color: rgb(0, 255, 251);
-  margin-left: -5px;
+.imgBlock {
+  display: flex;
+  width: 100%;
+  margin: 40px 0 40px 0;
+}
+
+.imgBlock > img {
+  width: 50%;
+  margin: 4px;
+}
+
+.sign {
+  text-align: right;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
