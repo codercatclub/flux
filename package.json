@@ -7,7 +7,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
     "dev": "next",
-    "build": "NODE_ENV=production && next build",
+    "build": "NODE_ENV=production && next build && next export",
     "export": "next export",
     "deploy": "./tools/deploy.sh",
     "start": "next start"
