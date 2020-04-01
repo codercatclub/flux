@@ -7,7 +7,7 @@ import { prefix } from '../../utils';
 const About: FC = () => {
   return (
     <div className={s.container}>
-      <Menu />
+      <Menu activeRoute='/about' />
       <div className={s.center}>
         <h1>Why we are making Flux.</h1>
         <p>

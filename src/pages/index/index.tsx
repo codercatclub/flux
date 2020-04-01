@@ -145,7 +145,7 @@ const Index: FC = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <Menu />
+      <Menu activeRoute='/' />
 
       <div className={s.titleContainer}>
         <div className={s.titleBlock}>

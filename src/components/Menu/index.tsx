@@ -1,28 +1,23 @@
 import { FC } from 'react';
 import Link from 'next/link';
 import s from './index.module.css';
-import Router from 'next/router';
 import { prefix } from '../../utils';
 
-const Menu: FC = () => {
+type MenuProps = {
+  activeRoute: string;
+}
+
+const Menu: FC<MenuProps> = ({ activeRoute }) => {
   const items = [
     { name: '.Home', path: '/' },
     { name: '.About', path: '/about' },
   ];
 
-  let pathname = '/';
-  if (process.browser) {
-    pathname = Router.pathname;
-  }
-
-  console.log('[D] items: ', items);
-  console.log('[D] pathname: ', pathname);
-
   const menuElements = items.map(i => (
     <Link key={i.name} href={prefix(i.path)}>
       <a
         className={s.menuItem}
-        style={pathname.endsWith(i.path) ? { color: 'rgb(14, 225, 221)' } : {}}
+        style={activeRoute === i.path ? { color: 'rgb(14, 225, 221)' } : {}}
       >
         {i.name}
       </a>
