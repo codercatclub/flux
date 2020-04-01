@@ -15,6 +15,9 @@ const Menu: FC = () => {
     pathname = Router.pathname;
   }
 
+  console.log('[D] items: ', items);
+  console.log('[D] pathname: ', pathname);
+
   const menuElements = items.map(i => (
     <Link key={i.name} href={prefix(i.path)}>
       <a
