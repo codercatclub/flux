@@ -42,6 +42,46 @@ const people = [
   },
 ];
 
+const events = [
+  {
+    id: 1,
+    location: 'Northern California, USA',
+    dates: '05.14 - 05.31. 2020',
+    price: 400,
+    images: [
+      'norcal/img_6.jpg',
+      'norcal/img_1.jpg',
+      'norcal/img_2.jpg',
+      'norcal/img_3.jpg',
+      'norcal/img_4.jpg',
+      'norcal/img_5.jpg',
+    ],
+    description: `The first flux gathering. We plan to rent out an apartment for 2 weeks, that can host around 5-7 people. The cost of the apartment will be split evenly among the people joining, around $300 - $400 each (depending on how many people).
+
+We believe that "self-isolating" together will allow us to create something beautiful during these interesting times.`,
+  },
+  {
+    id: 2,
+    location: 'Tbilisi, Georgia',
+    dates: '09.01 - 09.31. 2020',
+    price: 300,
+    images: [
+      'tbilisi/img_1.jpg',
+      'tbilisi/img_2.jpg',
+      'tbilisi/img_3.jpg',
+      'tbilisi/img_4.jpg',
+      'tbilisi/img_5.jpg',
+      'tbilisi/img_6.jpg',
+      'tbilisi/img_7.jpg',
+      'tbilisi/img_8.jpg',
+      'tbilisi/img_9.jpg',
+    ],
+    description: `Tbilisi, the capital of Georgia, is a unique and uprising destination for digital nomads. The combination of low prices, one year visas, vibrant culture, and rich young community, makes it a perfect spot for a Flux gathering.
+
+We are renting a large 3 bedroom apartment in the city around Fabrika - a famous art and tech hub in Marjanishvili district. It is a very walkable area popular among younger locals, located a 25 minute walk from the Old Town.`,
+  },
+];
+
 const Index: FC = () => {
   const autoplay = process.env.isProd ? 1 : 0;
   const isMobile = useMedia({ maxWidth: 768 });
@@ -49,17 +89,10 @@ const Index: FC = () => {
   const totalImages = 24;
   const galleryElements = [];
 
-  const totalTbilisiImages = 9;
-  const tbilisiImages = [];
-
   useEffect(() => {
     ReactGA.initialize('UA-100222662-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-
-  for (let i = 1; i < totalTbilisiImages + 1; i += 1) {
-    tbilisiImages.push(`tbilisi/img_${i}.jpg`);
-  }
 
   for (let i = 1; i < totalImages; i += 1) {
     galleryElements.push(
@@ -82,6 +115,26 @@ const Index: FC = () => {
         <h3 className={s.personName}>{person.name}</h3>
         <p className={s.bio}>{person.bio}</p>
       </div>
+    </div>
+  ));
+
+  const eventElements = events.map(event => (
+    <div className={s.event} key={event.id}>
+      <div className={s.eventContent}>
+        <div className={s.eventTitleBlock}>
+          <h3>{event.location}</h3>
+          <div>{event.dates}</div>
+          <div>Price: ${event.price}</div>
+        </div>
+
+        <p className={s.eventDescription}>{event.description}</p>
+        <Button
+          className={s.joinButton}
+          text="Join"
+          onClick={(): void => window.scrollTo(0, 9999)}
+        />
+      </div>
+      <ImageGrid className={s.eventImages} urls={event.images} />
     </div>
   ));
 
@@ -175,40 +228,7 @@ const Index: FC = () => {
 
       <h2 className={s.sectionHeader}>Events</h2>
 
-      <div className={s.events}>
-        <div className={s.event}>
-          <div className={s.eventContent}>
-            <div className={s.eventTitleBlock}>
-              <h3>Tbilisi, Georgia</h3>
-              <div>09.01 - 09.31. 2020</div>
-              <div>Price: $300</div>
-            </div>
-
-            <p className={s.eventDescription}>
-              Tbilisi, the capital of Georgia, is a unique and uprising
-              destination for digital nomads. The combination of low prices, one
-              year visas, vibrant culture, and rich young community, makes it a
-              perfect spot for a Flux gathering.
-            </p>
-            <p>
-              //TODO: We are very exited to host Flux in Tbilisi and connect
-              with other Fluxers and local people.
-            </p>
-            <p>
-              We are renting a large 3 bedroom apartment in the city around
-              Fabrika - a famous art and tech hub in Marjanishvili district. It
-              is a very walkable area popular among younger locals, located a 25
-              minute walk from the Old Town.
-            </p>
-            <Button
-              className={s.joinButton}
-              text="Join"
-              onClick={(): void => window.scrollTo(0, 9999)}
-            />
-          </div>
-          <ImageGrid className={s.eventImages} urls={tbilisiImages} />
-        </div>
-      </div>
+      <div className={s.events}>{eventElements}</div>
 
       <h2 className={s.sectionHeader}>People</h2>
       <div className={s.people}>{peopleElements}</div>

@@ -12,6 +12,16 @@
   margin: 40px;
 }
 
+.rightBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightBlock a {
+  margin-left: 10px;
+}
+
 @media (max-width: 758px) {
   .footer {
     height: 70px;
@@ -19,5 +29,9 @@
 
   .footer * {
     margin: 12px;
+  }
+
+  .footer > div {
+    margin: 10px;
   }
 }

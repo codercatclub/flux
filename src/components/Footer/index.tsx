@@ -5,7 +5,7 @@ const Footer: FC = () => {
   return (
     <div className={s.footer}>
       <div>© 2020 Flux.</div>
-      <div>
+      <div className={s.rightBlock}>
         Made by{' '}
         <a href="https://codercat.tk" target="_blank" rel="noopener noreferrer">
           CODERCAT

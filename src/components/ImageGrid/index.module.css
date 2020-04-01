@@ -25,3 +25,9 @@
 .container:hover .arrow {
   visibility: visible;
 }
+
+@media (max-width: 758px) {
+  .arrow {
+    visibility: visible;
+  }
+}
