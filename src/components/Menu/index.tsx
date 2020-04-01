@@ -19,7 +19,7 @@ const Menu: FC = () => {
     <Link key={i.name} href={prefix(i.path)}>
       <a
         className={s.menuItem}
-        style={i.path === pathname ? { color: "rgb(14, 225, 221)" } : {}}
+        style={pathname.endsWith(i.path) ? { color: 'rgb(14, 225, 221)' } : {}}
       >
         {i.name}
       </a>
