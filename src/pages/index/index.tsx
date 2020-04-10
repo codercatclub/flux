@@ -145,7 +145,7 @@ const Index: FC = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <Menu activeRoute='/' />
+      <Menu activeRoute="/" />
 
       <div className={s.titleContainer}>
         <div className={s.titleBlock}>
@@ -161,7 +161,7 @@ const Index: FC = () => {
         </div>
         <div className={s.statement}>
           <h2>WHAT?</h2>
-          <p>A one month coliving and coworking gathering.</p>
+          <p>A coliving and coworking gathering.</p>
         </div>
         <div className={s.statement}>
           <h2>WHY?</h2>
@@ -172,11 +172,11 @@ const Index: FC = () => {
         </div>
         <div className={s.statement}>
           <h2>WHERE?</h2>
-          <p>Tbilisi, Georgia</p>
+          <p>Northern California</p>
         </div>
         <div className={s.statement}>
           <h2>WHEN?</h2>
-          <p>June 1 - 30, 2020</p>
+          <p>05.14 - 05.31. 2020</p>
         </div>
       </div>
 
@@ -197,12 +197,11 @@ const Index: FC = () => {
         <div className={s.textBlock}>
           <h2>What is Flux?</h2>
           <p>
-            Flux is a one month gathering of creative and open minded
-            individuals in vibrant locations around the world. We like to
-            cultivate a space for technology, art, peer to peer education, and a
-            location independent lifestyle. We believe the time spent working
-            and living together will facilitate connections, friendship, and
-            collaboration.
+            Flux is a gathering of creative and open minded individuals in
+            vibrant locations around the world. We like to cultivate a space for
+            technology, art, peer to peer education, and a location independent
+            lifestyle. We believe the time spent working and living together
+            will facilitate connections, friendship, and collaboration.
           </p>
         </div>
         <div className={s.textBlock}>
