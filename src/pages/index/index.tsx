@@ -44,23 +44,6 @@ const people = [
 
 const events = [
   {
-    id: 1,
-    location: 'Northern California, USA',
-    dates: '05.14 - 05.31. 2020',
-    price: 400,
-    images: [
-      'norcal/img_6.jpg',
-      'norcal/img_1.jpg',
-      'norcal/img_2.jpg',
-      'norcal/img_3.jpg',
-      'norcal/img_4.jpg',
-      'norcal/img_5.jpg',
-    ],
-    description: `The first flux gathering. We plan to rent out an apartment for 2 weeks, that can host around 5-7 people. The cost of the apartment will be split evenly among the people joining, around $300 - $400 each (depending on how many people).
-
-We believe that "self-isolating" together will allow us to create something beautiful during these interesting times.`,
-  },
-  {
     id: 2,
     location: 'Tbilisi, Georgia',
     dates: '09.01 - 09.31. 2020',
